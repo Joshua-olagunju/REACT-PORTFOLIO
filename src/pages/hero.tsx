@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section id="home" className="bg-[url('/Hero-Wallpaper.jpg')] bg-cover bg-center bg-no-repeat !py-30  flex items-center justify-center gap-20 !px-5 !px:md-20">
       <div className="flex flex-col gap-5 ">
-        <h2 className="text-4xl font-[500]  mb-4">
+        <h2 className="text-6xl font-[500]  mb-4">
           I'm <span className="text-[#eafab4]">Joshua Olagunju</span>
           <h2 className="!mt-5">
             {isFrontEnd ? "Front-end Developer" : "UI/UX Designer"}
