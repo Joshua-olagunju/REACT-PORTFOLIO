@@ -31,7 +31,6 @@ export function Header() {
             className="hidden md:block"
           /> 
      
- 
         <MdOutlineMenu className="text-3xl text-white md:hidden cursor-pointer" />
       </div>
     </header>
