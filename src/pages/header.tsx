@@ -39,32 +39,34 @@ export function Header() {
           onClick={() => setMobileBar((prev) => !prev)}
         />
       </div>
-      {mobileBar && (
-        <div className="absolute top-17 left-0 right-0 z-40 transition-all duration-300 origin-top">
-          {/* Mobile Menu can be implemented here */}
-          <ul
-            className="flex flex-col font-[400] bg-[#275b8f] border-t border-[#eafab4] text-white text-sm gap-5  pt-5  pb-5 px-5 md:px-20"
-            onClick={() => setMobileBar(false)}
-          >
-            <li>
-              {" "}
-              <a href="#home">HOME</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#about">ABOUT</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#experience">EXPERIENCE</a>
-            </li>
-          </ul>
-        </div>
-      )}
+      <div
+        className={`absolute top-16 left-0 right-0 z-40 overflow-hidden transition-all duration-500 ease-in-out ${
+          mobileBar ? "max-h-screen" : "max-h-0"
+        }`}
+      >
+        {/* Mobile Menu can be implemented here */}
+        <ul
+          className="flex flex-col font-[400] border-b-1 border-[#eafab4] bg-white text-sm gap-5 shadow pb-5 px-5 md:px-20 pt-5"
+          onClick={() => setMobileBar(false)}
+        >
+          <li>
+            {" "}
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#experience">EXPERIENCE</a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 }
