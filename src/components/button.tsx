@@ -7,9 +7,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   size?: "small" | "medium" | "large";
   className?: string;
-  buttonBackground?: "yellow" | "black" | "green";
-  outlineBlack?: "yellow" | "black" | "green";
+  buttonBackground?: "blue" | "black" | "green";
+  outlineBlack?: "blue" | "black" | "green";
   outline?: boolean;
+  icon?: React.ReactNode;
 }
 export function Button({
   text,
@@ -18,6 +19,7 @@ export function Button({
   buttonBackground,
   outlineBlack,
   outline,
+  icon,
   ...props
 }: ButtonProps): React.JSX.Element {
   // ==================================
@@ -29,27 +31,32 @@ export function Button({
     large: "text-lg px-8 py-6",
   };
   const backgroundClasses = {
-    yellow: "bg-[#eafab4] text-black",
+    blue: "!bg-[#275b8f] !text-[#eafab4]",
     black: "bg-black !text-[#eafab4]",
     green: "bg-green-500 text-white",
   };
   const outlineClasses = {
-    yellow: "border-1 border-[#eafab4] !text-[#eafab4] bg-transparent",
+    blue: "border-1 !border-[#eafab4] !text-[#275b8f] bg-transparent",
     black: "border-1 border-black text-black bg-transparent",
     green: "border-1 border-green-500 text-green-500 bg-transparent",
   };
- 
+
   // ==================================
   // Button Size Classes
   // ==================================
   return (
     <button
       {...props}
-      className={`bg-[#eafab4] font-[500]    transition-all cursor-pointer text-black rounded-full ${
+      className={`bg-[#eafab4] font-[500]  transition-all cursor-pointer text-black rounded-full ${
         sizeClasses[size || "medium"]
-      }  ${backgroundClasses[buttonBackground || "yellow"]} ${outline ? outlineClasses[outlineBlack || "yellow"] : ""} ${className || ""} `}
+      }  ${backgroundClasses[buttonBackground || "blue"]} ${
+        outline ? outlineClasses[outlineBlack || "blue"] : ""
+      } ${className || ""} `}
     >
-      {text}
+      <div className="flex items-center justify-center gap-2">
+        {icon && <span className="text-sm">{icon}</span>}
+        {text}
+      </div>
     </button>
   );
 }

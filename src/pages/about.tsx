@@ -1,5 +1,6 @@
 import { Button } from "../components/button";
 import { useState } from "react";
+import { FaRegFileAlt } from "react-icons/fa";
 
 // ==================================
 // About Component
@@ -11,22 +12,25 @@ export function About() {
   // Rendered JSX
   // ==================================
   return (
-    <section id="about" className="text-black !py-20 flex flex-col items-center justify-center gap-10 !px-5 !px:md-20 bg-gray-100">
+    <section
+      id="about"
+      className="   !py-20 flex flex-col items-center justify-center gap-10 !px-5 !px:md-20 "
+    >
       <div className=" mb-4 text-center flex flex-col gap-2">
-        <h2 className="text-4xl font-[500] text-gray-600">About Me</h2>
-        <p className=" text-xs bg-black text-[#eafab4] px-5 py-2 rounded-full">
+        <h2 className="text-3xl font-[500] ">About Me</h2>
+        <p className=" text-xs bg-[#275b8f] text-[#eafab4] px-10 py-2 rounded-full">
           Know more about me and my tools
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-start justify-center">
         <div className="flex flex-col gap-6 items-start flex-1">
-          <p className="text-sm  max-w-3xl text-gray-600">
+          <p className="text-sm max-w-3xl text-gray-600">
             I'm, a passionate Front-end Developer and UI/UX Designer. I
             specialize in building modern, responsive websites and applications
-            using React , Next.js , TypeScript , and Tailwind CSS . I focus on
+            using React, Next.js, TypeScript, and Tailwind CSS. I focus on
             creating beautiful, user-friendly interfaces that deliver seamless
             experiences, combining clean, efficient code with strong design
-            principles.
+            principles. These skills are displayed in the icons .
           </p>
           <p className="text-sm max-w-3xl text-gray-600">
             Outside of coding, I love exploring new technologies, keeping up
@@ -38,9 +42,10 @@ export function About() {
 
           <Button
             text="Resume"
-            buttonBackground="black"
-            size="medium"
-            className="mt-4"
+            size="small"
+            className="w-50"
+            buttonBackground="blue"
+            icon={<FaRegFileAlt />}
           />
         </div>
 
@@ -70,6 +75,7 @@ export function About() {
               onClick={() => setShowFrontEndSkills(false)}
             />
           </div>
+
           {showFrontEndSkills && (
             <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
               <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
@@ -82,7 +88,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     NextJs
                   </figcaption>
                 </figure>
@@ -97,7 +103,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     JavaScript
                   </figcaption>
                 </figure>
@@ -112,7 +118,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Python
                   </figcaption>
                 </figure>
@@ -126,7 +132,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Git
                   </figcaption>
                 </figure>
@@ -141,7 +147,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     React
                   </figcaption>
                 </figure>
@@ -156,7 +162,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Tailwind
                   </figcaption>
                 </figure>
@@ -171,7 +177,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Bootstrap
                   </figcaption>
                 </figure>
@@ -186,7 +192,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Xampp
                   </figcaption>
                 </figure>
@@ -201,7 +207,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     TypeScript
                   </figcaption>
                 </figure>
@@ -220,7 +226,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Figma
                   </figcaption>
                 </figure>
@@ -235,7 +241,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Adobe XD
                   </figcaption>
                 </figure>
@@ -250,7 +256,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Framer
                   </figcaption>
                 </figure>
@@ -265,7 +271,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Canva
                   </figcaption>
                 </figure>
@@ -280,7 +286,7 @@ export function About() {
                   />
                 </div>
                 <figure className="flex flex-col items-center w-full">
-                  <figcaption className="text-xs bg-black text-white px-2 py-1  rounded-b  w-full text-center">
+                  <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
                     Miro
                   </figcaption>
                 </figure>

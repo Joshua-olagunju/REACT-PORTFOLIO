@@ -3,9 +3,6 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,6 +15,7 @@
 }
 body {
   overflow-x: hidden;
+  color: #275b8f;
 }
 /*==================================
         Webkit Styling
