@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="border-b-4 rounded-b-[5rem] md:rounded-b-[20rem]  border-[#eafab4] bg-cover bg-center bg-no-repeat py-20 md:py-30 flex items-center justify-center gap-20 !px-5 !px:md-20"
+      className="border-b-2 rounded-b-[5rem] md:rounded-b-[20rem]  border-[#275b8f] bg-cover bg-center bg-no-repeat py-20 md:py-30 flex items-center justify-center gap-20 !px-5 !px:md-20"
     >
       <div className="flex flex-col gap-5 ">
         <h2 className="text-3xl font-[600]  mb-4">

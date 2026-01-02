@@ -9,7 +9,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#275b8f] !px-5 !md:px-20 py-5 md:py-0   ">
       <div className="flex justify-between items-center ">
-        <div className="font-[500] text-[#ffffff] text-lg">JOSHUA .O</div>
+        <div>
+          <img
+            src="/MyLogo.png"
+            alt=""
+            className="w-28  filter invert brightness-0  h-auto object-contain"
+          />
+        </div>
         <ul className="hidden md:flex text-[#ffffff] cursor-pointer font-[500] text-sm flex h-16 space-x-4  py-10 gap-10 items-center justify-center">
           <li>
             <a href="#home">Home</a>
