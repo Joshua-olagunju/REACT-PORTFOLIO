@@ -57,7 +57,7 @@ export function About() {
               size="small"
               className={`mt-4 ${
                 showFrontEndSkills
-                  ? "bg-black text-white"
+                  ? "bg-gray-500 !text-white"
                   : "bg-transparent !text-gray-500 border-1 border-black"
               }`}
               onClick={() => setShowFrontEndSkills(true)}
@@ -69,7 +69,7 @@ export function About() {
               size="small"
               className={`mt-4 ${
                 !showFrontEndSkills
-                  ? "bg-black text-white"
+                  ? "bg-gray-500 !text-white"
                   : "bg-transparent !text-gray-500 border-1 border-black"
               }`}
               onClick={() => setShowFrontEndSkills(false)}
