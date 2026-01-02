@@ -31,12 +31,12 @@ export function Button({
     large: "text-lg px-8 py-6",
   };
   const backgroundClasses = {
-    blue: "!bg-[#275b8f] !text-[#eafab4]",
+    blue: "!bg-[#275b8f] !text-[#ffffff]",
     black: "bg-black !text-[#eafab4]",
     green: "bg-green-500 text-white",
   };
   const outlineClasses = {
-    blue: "border-1 !border-[#eafab4] !text-[#275b8f] bg-transparent",
+    blue: "border-1 !border-[#ffffff] !text-[#275b8f] bg-transparent",
     black: "border-1 border-black text-black bg-transparent",
     green: "border-1 border-green-500 text-green-500 bg-transparent",
   };

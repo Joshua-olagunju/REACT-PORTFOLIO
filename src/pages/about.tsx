@@ -18,7 +18,7 @@ export function About() {
     >
       <div className=" mb-4 text-center flex flex-col gap-2">
         <h2 className="text-3xl font-[500] ">About Me</h2>
-        <p className=" text-xs bg-[#275b8f] text-[#eafab4] px-10 py-2 rounded-full">
+        <p className=" text-xs bg-[#275b8f] text-[#ffffff] px-10 py-2 rounded-full">
           Know more about me and my tools
         </p>
       </div>
