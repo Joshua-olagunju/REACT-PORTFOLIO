@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaBriefcase } from "react-icons/fa";
+import {FaBriefcase, } from "react-icons/fa";
 
 import { Button } from "../components/button";
 import { useState, useEffect } from "react";
