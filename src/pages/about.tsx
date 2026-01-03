@@ -14,7 +14,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="   !py-20 flex flex-col items-center justify-center gap-10 !px-5 !px:md-20 "
+      className="   !py-20 !mt-20 flex flex-col items-center justify-center gap-10 !px-5 !px:md-20 "
     >
       <div className=" mb-4 text-center flex flex-col gap-2">
         <h2 className="text-3xl font-[500] ">About Me</h2>
