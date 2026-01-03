@@ -32,7 +32,10 @@ export function Header() {
           <ul className="font-[500] cursor-pointer text-xs flex h-12 space-x-4  py-7 gap-10 items-center justify-center ">
             <div className="flex w-full items-center justify-between md:hidden ">
               <div className=" md:hidden font-[600]   text-md">
-                <h1>FRONT-END DEVELOPER & <span className="text-[#83b541]">UI/UX DESIGNER</span> </h1>
+                <h1>
+                  FRONT-END DEVELOPER &{" "}
+                  <span className="text-[#83b541]">UI/UX DESIGNER</span>{" "}
+                </h1>
               </div>
               <MdOutlineMenu
                 className="text-3xl    cursor-pointer "
@@ -80,10 +83,6 @@ export function Header() {
               <li>
                 {" "}
                 <a href="#experience">EXPERIENCE</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#contact">CONTACT</a>
               </li>
             </ul>
           </div>
