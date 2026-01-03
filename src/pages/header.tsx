@@ -30,9 +30,6 @@ export function Header() {
 
         <div className="bg-[#FFFFFF] !shadow-lg  !px-5">
           <ul className="font-[500] cursor-pointer text-xs flex h-12 space-x-4  py-7 gap-10 items-center justify-center ">
-            <div className="hidden md:flex font-[600]  text-md">
-              <h1 className="!font[600]">FRONT-END DEVELOPER</h1>
-            </div>
             <div className="flex w-full items-center justify-between md:hidden ">
               <div className=" md:hidden font-[600]   text-md">
                 <h1>FRONT-END DEVELOPER</h1>

@@ -25,7 +25,7 @@ export function Hero() {
     <>
       <div id="home"  className="flex flex-col gap-5 justify-center items-center relative ">
         <img
-          src="/ahmed-asakrah-H-DzK-5V-yc-unsplash(1).jpg"
+          src="/HeroImage.jpg"
           alt=""
           className="w-full h-70 md:h-100 object-cover"
         />
