@@ -21,23 +21,25 @@ export function Project() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3  gap-10 w-full">
         {/* Project Card 1 */}
-        <div className="  rounded-lg p-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className="  rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
           <img
-            src="/Web_Photo_Editor.jpg"
+            src="/Screenshot 2026-01-03 084957.png"
             alt="Project 1"
             className="w-full object-contain rounded-md mb-4 h-48"
           />
-          <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
-          <p className="text-sm mb-4">
-            A personal portfolio website showcasing my projects and skills,
-            built with React and Tailwind CSS.
-          </p>
-          <Button
-            text="View Project"
-            size="small"
-            buttonBackground="blue"
-            className="w-full !mt-5"
-          />
+          <div className="p-5">
+            <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
+            <p className="text-sm mb-4">
+              A personal portfolio website showcasing my projects and skills,
+              built with React and Tailwind CSS.
+            </p>
+            <Button
+              text="View Project"
+              size="small"
+              buttonBackground="blue"
+              className="w-full !mt-5"
+            />
+          </div>
         </div>
         {/* Project Card 1 */}
         <div className=" border-[#275b8f] rounded-lg  shadow-sm hover:shadow-xl transition-shadow duration-300">
@@ -61,23 +63,25 @@ export function Project() {
           </div>
         </div>
         {/* Project Card 1 */}
-        <div className=" rounded-lg p-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div className=" rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
           <img
-            src="/Screenshot 2026-01-03 082323.png"
+            src="/Screenshot 2026-01-03 084409.png"
             alt="Project 1"
             className="w-full object-cover rounded-md mb-4  h-48"
           />
-          <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
-          <p className="text-sm mb-4">
-            A personal portfolio website showcasing my projects and skills,
-            built with React and Tailwind CSS.
-          </p>
-          <Button
-            text="View Project"
-            size="small"
-            buttonBackground="blue"
-            className="w-full !mt-5"
-          />
+          <div className="p-5">
+            <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
+            <p className="text-sm mb-4">
+              A personal portfolio website showcasing my projects and skills,
+              built with React and Tailwind CSS.
+            </p>
+            <Button
+              text="View Project"
+              size="small"
+              buttonBackground="blue"
+              className="w-full !mt-5"
+            />
+          </div>
         </div>
       </div>
     </section>
