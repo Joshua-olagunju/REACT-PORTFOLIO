@@ -31,14 +31,14 @@ export function Header() {
         <div className="bg-[#FFFFFF] !shadow-lg  !px-5">
           <ul className="font-[500] cursor-pointer text-xs flex h-12 space-x-4  py-7 gap-10 items-center justify-center ">
             <div className="flex w-full items-center justify-between md:hidden ">
-              <div className=" md:hidden font-[600]   text-md">
+              <div className=" md:hidden font-[600] text-gray-500  text-md">
                 <h1>
                   FRONT-END DEVELOPER &{" "}
                   <span className="text-[#83b541]">UI/UX DESIGNER</span>{" "}
                 </h1>
               </div>
               <MdOutlineMenu
-                className="text-3xl    cursor-pointer "
+                className="text-3xl text-gray-500    cursor-pointer "
                 onClick={() => setMobileBar((prev) => !prev)}
               />
             </div>
@@ -62,10 +62,11 @@ export function Header() {
           </ul>
         </div>
         {mobileBar && (
-          <div className="mb-0 bg-[#212121]">
+          <div className="mb-0 bg-[#ffffff]">
             {/* Mobile Menu can be implemented here */}
+            <hr  className="!mx-5 text-gray-500 "/>
             <ul
-              className="flex flex-col font-[400]  text-white text-sm px-5   gap-5 border-t pt-5 border-white  pb-5"
+              className="flex flex-col font-[500] text-gray-500    text-sm px-5   gap-5 pt-5  pb-5"
               onClick={() => setMobileBar(false)}
             >
               <li>
