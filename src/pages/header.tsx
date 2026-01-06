@@ -1,5 +1,6 @@
 import { Button } from "../components/button";
 import { MdOutlineMenu } from "react-icons/md";
+
 import { useState } from "react";
 // ==================================
 // Header Component
@@ -13,9 +14,9 @@ export function Header() {
           <div className="flex justify-between items-center ">
             <div>
               <img
-                src="/MyLogo.png"
+                src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
                 alt=""
-                className="w-20  filter invert brightness-0  h-auto object-contain"
+                className="w-20 h-auto object-contain"
               />
             </div>
 
@@ -29,9 +30,15 @@ export function Header() {
         </header>
 
         <div className="bg-[#FFFFFF] !shadow-lg  !px-5">
-          <ul className="font-[500] cursor-pointer text-xs flex h-12 space-x-4  py-7 gap-10 items-center justify-center ">
+          <ul className=" text-gray-500 cursor-pointer text-xs flex h-12 space-x-4  py-7 gap-10 items-center justify-between ">
+            <div className="flex items-center gap-5 hidden md:flex">
+              <h1 className="font-[500]">
+                  FRONT-END DEVELOPER &{" "}
+                  <span className="text-[#83b541]">UI/UX DESIGNER</span>{" "}
+                </h1>
+            </div>
             <div className="flex w-full items-center justify-between md:hidden ">
-              <div className=" md:hidden font-[600] text-gray-500  text-md">
+              <div className="md:hidden w-full font-[600] text-gray-500  text-md">
                 <h1>
                   FRONT-END DEVELOPER &{" "}
                   <span className="text-[#83b541]">UI/UX DESIGNER</span>{" "}
@@ -42,31 +49,34 @@ export function Header() {
                 onClick={() => setMobileBar((prev) => !prev)}
               />
             </div>
-            <li className="hidden md:block">
-              <a
-                href="#home"
-                className="bg-[#83b541] px-3 py-2 rounded-full text-white"
-              >
-                HOME
-              </a>
-            </li>
-            <li className="hidden md:block">
-              <a href="#about">ABOUT</a>
-            </li>
-            <li className="hidden md:block">
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li className="hidden md:block">
-              <a href="#experience">EXPERIENCE</a>
-            </li>
+            <div className="hidden md:flex gap-15 items-center justify-center flex-1">
+              <li>
+                <a
+                  href="#home"
+                  className="bg-[#83b541] px-3 py-2 rounded-full text-white"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a href="#about">ABOUT</a>
+              </li>
+              <li>
+                <a href="#projects">PROJECTS</a>
+              </li>
+              <li>
+                <a href="#experience">EXPERIENCE</a>
+              </li>
+            </div>
+            
           </ul>
         </div>
         {mobileBar && (
-          <div className="mb-0 bg-[#ffffff]">
+          <div className="mb-0 bg-[#ffffff] shadow-sm rounded-b-lg">
             {/* Mobile Menu can be implemented here */}
-            <hr  className="!mx-5 text-gray-500 "/>
+            <hr className="!mx-5 text-gray-500 " />
             <ul
-              className="flex flex-col font-[500] text-gray-500    text-sm px-5   gap-5 pt-5  pb-5"
+              className="flex flex-col   text-gray-500    text-sm px-5   gap-5 pt-5  pb-5"
               onClick={() => setMobileBar(false)}
             >
               <li>
