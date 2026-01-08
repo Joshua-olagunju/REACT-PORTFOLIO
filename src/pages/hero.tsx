@@ -38,7 +38,7 @@ export function Hero() {
           </h2>
 
           <h2 className="text-3xl md:text-4xl font-[500] mb-2">
-            {isFrontEnd ? "FRONT-END DEVELOPER" : "UI/UX DESIGNER"}
+            {isFrontEnd ? "FRONTEND DEVELOPER" : "UI/UX DESIGNER"}
           </h2>
 
           <p className="text-sm max-w-3xl">

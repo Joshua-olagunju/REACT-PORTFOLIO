@@ -1,13 +1,11 @@
 import { Button } from "../components/button";
-import { useState } from "react";
+
 import { FaRegFileAlt } from "react-icons/fa";
 
 // ==================================
 // About Component
 // ==================================
 export function About() {
-  const [showFrontEndSkills, setShowFrontEndSkills] = useState(true);
-
   // ==================================
   // Rendered JSX
   // ==================================
@@ -19,16 +17,16 @@ export function About() {
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
         <div className="flex flex-col gap-2">
           <div className=" !text-start  flex flex-col gap-2">
-            <h1 className="text-6xl font-[500] mb-0">About me</h1>
+            <h1 className="text-6xl font-[500] mb-0">
+              About <span className="text-[#83b541]">me</span>
+            </h1>
           </div>
 
           <div className="flex flex-col gap-6 items-start flex-1">
-            <h3 className="text-1xl font-[500]  text-[#83b541]">
-              GET TO KNOW MORE ABOUT ME
-            </h3>
+            <h3 className="text-1xl font-[500]">GET TO KNOW MORE ABOUT ME</h3>
 
             <p className="text-md max-w-3xl text-gray-500">
-              I'm a passionate Front-end Developer and UI/UX Designer who builds
+              I'm a passionate Frontend Developer and UI/UX Designer who builds
               modern, responsive websites and applications using React, Next.js,
               TypeScript, and Tailwind CSS. I enjoy turning complex ideas into
               intuitive, visually appealing interfaces, with my core tools and
@@ -44,10 +42,11 @@ export function About() {
             </p>
 
             <Button
-              text="Resume"
+              text="RESUME"
               size="small"
-              className="w-50 py-3"
-              buttonBackground="green"
+              className="w-50 py-3 "
+              outlineBlack="black"
+              outline={true}
               icon={<FaRegFileAlt />}
             />
           </div>
@@ -58,251 +57,6 @@ export function About() {
             className="rounded-full h-84 w-84 object-cover"
           />
         </div>
-      </div>
-      <div className="flex flex-col gap-4 flex-1 w-full">
-        <div className=" flex gap-4 items-start">
-          <Button
-            text="Front-end"
-            buttonBackground="black"
-            size="small"
-            className={`mt-4 ${
-              showFrontEndSkills
-                ? "bg-gray-500 !text-white"
-                : "bg-transparent !text-gray-500 border-1 border-black"
-            }`}
-            onClick={() => setShowFrontEndSkills(true)}
-          />
-
-          <Button
-            text="UI/UX"
-            buttonBackground="black"
-            size="small"
-            className={`mt-4 ${
-              !showFrontEndSkills
-                ? "bg-gray-500 !text-white"
-                : "bg-transparent !text-gray-500 border-1 border-black"
-            }`}
-            onClick={() => setShowFrontEndSkills(false)}
-          />
-        </div>
-
-        {showFrontEndSkills && (
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/next-js.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  NextJs
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/javascript-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  JavaScript
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/python-svgrepo-com(1).svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Python
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/git-svgrepo-com(2).svg"
-                  alt="Next.js Logo"
-                  width={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Git
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/react-2.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  React
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/tailwindcss-icon-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Tailwind
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/bootstrap-4-logo-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Bootstrap
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/xampp-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Xampp
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/typescript-logo-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  TypeScript
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        )}
-        {!showFrontEndSkills && (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/figma-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Figma
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/adobe-xd-1-logo-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Adobe XD
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/framer-svgrepo-com.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Framer
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/canva-icon.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Canva
-                </figcaption>
-              </figure>
-            </div>
-            <div className="flex flex-col items-center pt-5 gap-3 bg-white rounded-lg shadow-md">
-              <div className="px-10">
-                <img
-                  src="/miro.svg"
-                  alt="Next.js Logo"
-                  width={30}
-                  height={30}
-                />
-              </div>
-              <figure className="flex flex-col items-center w-full">
-                <figcaption className="text-xs bg-[#275b8f] text-white px-2 py-1  rounded-b  w-full text-center">
-                  Miro
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
