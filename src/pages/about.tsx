@@ -14,7 +14,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="   !py-20 !mt-20 flex flex-col  justify-center gap-10 !px-5 !px:md-20 "
+      className="   !py-10 !mt-20 flex flex-col  justify-center gap-10 !px-5 !px:md-20 "
     >
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
         <div className="flex flex-col gap-2">
@@ -23,9 +23,8 @@ export function About() {
           </div>
 
           <div className="flex flex-col gap-6 items-start flex-1">
-            <h3 className="text-2xl   text-gray-500">
-              I'm a Front-end Developer and UI/UX Designer based in Lagos,
-              Nigeria.
+            <h3 className="text-1xl font-[500]  text-[#83b541]">
+              GET TO KNOW MORE ABOUT ME
             </h3>
 
             <p className="text-md max-w-3xl text-gray-500">
@@ -55,8 +54,7 @@ export function About() {
         </div>
         <div className="flex flex-col gap-2">
           <img
-            src="/WhatsApp Image 2026-01-02 at 9.42.58 PM.jpeg"
-            alt=""
+            src="/MyAboutImage.jpeg"
             className="rounded-full h-84 w-84 object-cover"
           />
         </div>
