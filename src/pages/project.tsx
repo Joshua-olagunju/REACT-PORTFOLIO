@@ -13,11 +13,15 @@ export function Project() {
       className="py-20 md:py-30 flex flex-col items-center justify-center gap-10 !px-5 !md:px-20"
     >
       <div className="flex flex-col gap-2 items-center">
-        <h2 className="text-3xl font-[600] ">Projects</h2>
-        <p className="text-sm border-l-5   pl-3 max-w-3xl text-center">
-          Here are some of my notable projects that showcase my skills in
-          front-end development and UI/UX design.
-        </p>
+       <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
+          My <span className="text-[#83b541]">Projects</span>
+        </h1>
+        <div className="flex flex-col gap-2 items-center text-start md:text-center justify-center  ">
+          <h3 className="text-1xl font-[500] text-gray-500">
+            Here are some of my notable projects that showcase my skills in
+            front-end development and UI/UX design.
+          </h3>
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3  gap-10 w-full">
         {/* Project Card 1 */}
