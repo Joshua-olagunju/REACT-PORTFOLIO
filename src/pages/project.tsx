@@ -13,7 +13,7 @@ export function Project() {
       className="py-20 md:py-30 flex flex-col items-center justify-center gap-10 !px-5 !md:px-20"
     >
       <div className="flex flex-col gap-2 items-center">
-       <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
+        <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
           My <span className="text-[#83b541]">Projects</span>
         </h1>
         <div className="flex flex-col gap-2 items-center text-start md:text-center justify-center  ">

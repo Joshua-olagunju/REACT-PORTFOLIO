@@ -11,6 +11,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   outlineBlack?: "blue" | "black" | "green" | "blueSecondary";
   outline?: boolean;
   icon?: React.ReactNode;
+  href?: string;
+  target?: string;
+  rel?: string;
 }
 export function Button({
   text,
@@ -20,6 +23,9 @@ export function Button({
   outlineBlack,
   outline,
   icon,
+  href,
+  target,
+  rel,
   ...props
 }: ButtonProps): React.JSX.Element {
   // ==================================
@@ -38,7 +44,8 @@ export function Button({
   };
   const outlineClasses = {
     blue: "!border-1 !border-[#ffffff] !text-[#275b8f] !bg-transparent",
-    blueSecondary: "!border-1 !border-[#275b8f] !text-[#275b8f] !bg-transparent",
+    blueSecondary:
+      "!border-1 !border-[#275b8f] !text-[#275b8f] !bg-transparent",
     black: "!border-1 !border-black !text-[black] !bg-transparent",
     green: "!border-1 !border-[#83b541] !text-[#83b541] !bg-transparent",
   };
@@ -46,15 +53,25 @@ export function Button({
   // ==================================
   // Button Size Classes
   // ==================================
+  const classNames = `bg-[#eafab4] font-[500]  transition-all cursor-pointer text-black rounded-full ${
+    sizeClasses[size || "medium"]
+  }  ${backgroundClasses[buttonBackground || "blue"]} ${
+    outline ? outlineClasses[outlineBlack || "blue"] : ""
+  } ${className || ""} `;
+
+  if (href) {
+    return (
+      <a href={href} target={target} rel={rel} className={classNames}>
+        <div className="flex items-center justify-center gap-2">
+          {icon && <span className="text-sm">{icon}</span>}
+          {text}
+        </div>
+      </a>
+    );
+  }
+
   return (
-    <button
-      {...props}
-      className={`bg-[#eafab4] font-[500]  transition-all cursor-pointer text-black rounded-full ${
-        sizeClasses[size || "medium"]
-      }  ${backgroundClasses[buttonBackground || "blue"]} ${
-        outline ? outlineClasses[outlineBlack || "blue"] : ""
-      } ${className || ""} `}
-    >
+    <button {...props} className={classNames}>
       <div className="flex items-center justify-center gap-2">
         {icon && <span className="text-sm">{icon}</span>}
         {text}

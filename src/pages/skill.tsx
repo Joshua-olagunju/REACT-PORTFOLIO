@@ -7,7 +7,7 @@ export function Skill() {
   // ==================================
   return (
     <>
-      <div className="flex flex-col gap-10  " id="skills">
+      <div className="flex flex-col gap-10  w-full" id="skills">
         <div className=" !text-center  flex flex-col gap-5 !mx-5">
           <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
             Skills & <span className="text-[#83b541]">Expertise</span>
@@ -53,7 +53,7 @@ export function Skill() {
               </div>
               <div>
                 <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>TypeScript</p>
+                  <p>TypeScript / JavaScript</p>
                   <p>70%</p>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -63,34 +63,10 @@ export function Skill() {
                   />
                 </div>
               </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>JavaScript</p>
-                  <p>85%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "85%" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>CSS</p>
-                  <p>90%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "90%" }}
-                  />
-                </div>
-              </div>
 
               <div>
                 <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Tailwind</p>
+                  <p>CSS / Tailwind / BootStrap</p>
                   <p>88%</p>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -146,31 +122,7 @@ export function Skill() {
 
               <div>
                 <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>XAMPP</p>
-                  <p>75%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "75%" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Netlify</p>
-                  <p>80%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Vercel</p>
+                  <p>Vercel / Netlify</p>
                   <p>80%</p>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
@@ -223,39 +175,16 @@ export function Skill() {
                   />
                 </div>
               </div>
+
               <div>
                 <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Wireframing</p>
-                  <p>80%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Prototyping</p>
+                  <p>Prototyping / Wireframe</p>
                   <p>78%</p>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div
                     className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
                     style={{ width: "78%" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex items-center gap-20 justify-between mb-1">
-                  <p>Research</p>
-                  <p>82%</p>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-[#83b541] h-2 rounded-full transition-all duration-700"
-                    style={{ width: "82%" }}
                   />
                 </div>
               </div>

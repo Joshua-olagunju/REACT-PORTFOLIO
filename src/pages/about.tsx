@@ -45,9 +45,11 @@ export function About() {
               text="RESUME"
               size="small"
               className="w-50 py-3 "
-              outlineBlack="black"
-              outline={true}
+              buttonBackground="green"
               icon={<FaRegFileAlt />}
+              href="https://drive.google.com/file/d/1F5_aK8NCaFkAE-BxBaQgNYMu4h78Ps9_/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
             />
           </div>
         </div>
