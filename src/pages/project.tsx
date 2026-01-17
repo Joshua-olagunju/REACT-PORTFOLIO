@@ -10,12 +10,15 @@ export function Project() {
   return (
     <section
       id="projects"
-      className="py-20 md:py-30 flex flex-col items-center justify-center gap-10 !px-5 !md:px-20"
+      className="py-20 md:py-30 flex flex-col items-center justify-center gap-10 !px-5 !md:px-20 !lg:mx-10"
     >
-      <div className="flex flex-col gap-2 items-center">
-        <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
-          My <span className="text-[#83b541]">Projects</span>
-        </h1>
+      <div className="flex flex-col gap-2 items-center justify-center">
+        <div className="   text-start md:text-center flex flex-col gap-2">
+          <h1 className="text-6xl font-[500] mb-0">
+            My <span className="text-[#83b541]">Projects</span>
+          </h1>
+        </div>
+
         <div className="flex flex-col gap-2 items-center text-start md:text-center justify-center  ">
           <h3 className="text-1xl font-[500] text-gray-500">
             Here are some of my notable projects that showcase my skills in
@@ -23,68 +26,101 @@ export function Project() {
           </h3>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-10 w-full">
+      <div className=" flex items-center flex-col md:flex-row justify-center !lg:mx-40 gap-10">
         {/* Project Card 1 */}
-        <div className="  rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div>
           <img
             src="/Screenshot 2026-01-03 084957.png"
             alt="Project 1"
             className="w-full object-contain rounded-md mb-4 h-48"
           />
-          <div className="p-5">
-            <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
+          <div className="pt-5">
+            <h3 className="text-xl font-[600] mb-2">
+              Finance Tracking Web Application
+            </h3>
             <p className="text-sm mb-4">
-              A personal portfolio website showcasing my projects and skills,
-              built with React and Tailwind CSS.
+              A finance management application for tracking projects, invoices,
+              and payments, designed to streamline financial records and
+              business workflows.
             </p>
-            <Button
-              text="View Project"
-              size="small"
-              buttonBackground="blue"
-              className="w-full !mt-5"
-            />
+            <div className="flex justify-between !mt-3">
+              {/* <Button
+                text="View Demo"
+                size="small"
+                buttonBackground="green"
+                className="flex !justify-end !mt-5  !px-5"
+              /> */}
+            </div>
+            <div className="flex flex-wrap gap-2 items-center text-sm font-medium">
+              <span>Tech Stack:</span>
+              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
+                Tailwind CSS
+              </span>
+              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
+                React.js
+              </span>
+              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
+                TypeScript
+              </span>
+            </div>
           </div>
         </div>
         {/* Project Card 1 */}
-        <div className=" border-[#275b8f] rounded-lg  shadow-sm hover:shadow-xl transition-shadow duration-300">
+        <div>
           <img
-            src="/Screenshot 2026-01-03 084057.png"
-            alt="Project 1"
-            className="w-full object-cover   mb-4  h-48"
-          />
-          <div className="p-5">
-            <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
-            <p className="text-sm mb-4">
-              A personal portfolio website showcasing my projects and skills,
-              built with React and Tailwind CSS.
-            </p>
-            <Button
-              text="View Project"
-              size="small"
-              buttonBackground="blue"
-              className="w-full !mt-5"
-            />
-          </div>
-        </div>
-        {/* Project Card 1 */}
-        <div className=" rounded-lg shadow-sm hover:shadow-xl transition-shadow duration-300">
-          <img
-            src="/Screenshot 2026-01-03 084409.png"
+            src="/Screenshot 2026-01-17 002001.png"
             alt="Project 1"
             className="w-full object-cover rounded-md mb-4  h-48"
           />
-          <div className="p-5">
-            <h3 className="text-xl font-[500] mb-2">Portfolio Website</h3>
-            <p className="text-sm mb-4">
-              A personal portfolio website showcasing my projects and skills,
-              built with React and Tailwind CSS.
+          <div className="pt-5">
+            <h3 className="text-xl font-[600] mb-2">
+              {" "}
+              Corporate Fintech Website
+            </h3>
+            <p className="text-sm text-start mb-4">
+              A responsive fintech website built with React and Tailwind,
+              focusing on performance, user-centered design, and showcasing
+              digital solutions clearly and effectively.
             </p>
-            <Button
-              text="View Project"
-              size="small"
-              buttonBackground="blue"
-              className="w-full !mt-5"
-            />
+            <div className="flex justify-between">
+              <Button
+                text="View Project"
+                size="small"
+                buttonBackground="green"
+                href="https://abvakonmobilesolutions.com/index.html"
+                target="_blank"
+                className="flex !justify-end !mt-5  !px-5"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/Screenshot 2026-01-17 003920.png"
+            alt="Project 1"
+            className="w-full object-cover rounded-md mb-4  h-48"
+          />
+          <div className="pt-5">
+            <h3 className="text-xl font-[600] mb-2">
+              {" "}
+              Personal Tech Journey Blog
+            </h3>
+            <p className="text-sm text-start mb-4">
+              A blog documenting my journey from beginner to front-end
+              developer, sharing lessons, challenges, and projects. Built to
+              reflect growth, persistence, and a commitment to learning and
+              helping others in tech.
+            </p>
+            <div className="flex justify-between">
+              <Button
+                text="View Project"
+                size="small"
+                buttonBackground="green"
+                href="https://joshua-olagunju.github.io/My-Blog/"
+                target="_blank"
+                className="flex !justify-end !mt-5  !px-5"
+              />
+            </div>
           </div>
         </div>
       </div>
