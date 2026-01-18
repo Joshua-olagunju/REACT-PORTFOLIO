@@ -7,7 +7,7 @@ export function Skill() {
   // ==================================
   return (
     <>
-      <div className="flex flex-col gap-10  w-full" id="skills">
+      <div className="flex flex-col gap-10 w-full  !mx-5 lg:w-5/6 !mx-auto justify-center items-center" id="skills">
         <div className=" !text-center  flex flex-col gap-5 !mx-5">
           <h1 className="text-6xl text-start md:text-center font-[500] mb-0">
             Skills & <span className="text-[#83b541]">Expertise</span>
@@ -21,8 +21,8 @@ export function Skill() {
           </div>
         </div>
 
-        <div className="  !mx-5  flex flex-col gap-5 md:flex-row justify-center items-center">
-          <div className="shadow-sm p-5 rounded flex gap-3  flex-col w-full md:w-1/2">
+        <div className="w-full !mx-5 flex flex-col gap-5 md:flex-row justify-center items-center">
+          <div className="shadow-sm p-5 rounded flex gap-3 bg-white flex-col w-full ">
             <div className="mb-5 text-center text-1xl font-[500]">
               <h1>Frontend</h1>
             </div>
@@ -78,7 +78,7 @@ export function Skill() {
               </div>
             </div>
           </div>
-          <div className="shadow-sm p-5 rounded flex gap-3  flex-col w-full md:w-1/2">
+          <div className="shadow-sm p-5 rounded flex gap-3  bg-white  flex-col w-full  ">
             <div className="mb-5 text-center text-1xl font-[500]">
               <h1>Tools</h1>
             </div>
@@ -134,7 +134,7 @@ export function Skill() {
               </div>
             </div>
           </div>
-          <div className="shadow-sm p-5 rounded flex gap-3  flex-col w-full md:w-1/2">
+          <div className="shadow-sm p-5 rounded flex gap-3  bg-white  flex-col w-full  ">
             <div className="mb-5 text-center text-1xl font-[500]">
               <h1>UI/UX</h1>
             </div>

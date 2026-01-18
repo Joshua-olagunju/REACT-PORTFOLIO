@@ -10,9 +10,9 @@ export function Project() {
   return (
     <section
       id="projects"
-      className="py-20 md:py-30 flex flex-col items-center justify-center gap-10 !px-5 !md:px-20 !lg:mx-10"
+      className="py-20 md:py-30 flex flex-col items-center justify-center gap-10  w-full lg:w-5/6 !mx-auto   "
     >
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="flex flex-col gap-2 !mx-5 items-center justify-center">
         <div className="   text-start md:text-center flex flex-col gap-2">
           <h1 className="text-6xl font-[500] mb-0">
             My <span className="text-[#83b541]">Projects</span>
@@ -26,7 +26,7 @@ export function Project() {
           </h3>
         </div>
       </div>
-      <div className=" flex items-center flex-col md:flex-row justify-center !lg:mx-40 gap-10">
+      <div className=" flex items-center flex-col md:flex-row justify-center  !lg:mx-40 gap-10 !mx-5">
         {/* Project Card 1 */}
         <div>
           <img
