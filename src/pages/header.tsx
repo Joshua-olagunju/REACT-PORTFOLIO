@@ -36,7 +36,7 @@ export function Header() {
             <div className="flex items-center gap-4">
             <div className="rounded-full h-12 w-12 overflow-hidden">
               <img
-                src="public/MyAboutImage.jpeg"
+                src="/MyAboutImage.jpeg"
                 alt=""
                 className="rounded-full object-fit-cover"
               />
