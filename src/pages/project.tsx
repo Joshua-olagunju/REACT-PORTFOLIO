@@ -38,7 +38,7 @@ export function Project() {
         <div>
           <div className="rounded-lg overflow-hidden  aspect-video">
             <img
-              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
+              src="/abvakonmobilesolutions.com_ (2).png"
               alt="Project 3"
               className="w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ export function Project() {
         <div>
           <div className="rounded-lg overflow-hidden aspect-video ">
             <img
-              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
+              src="/corebooks.com.ng_DashboardPages_MainDashboard.php (1).png"
               alt="Project 3"
               className=" w-full h-full object-cover"
             />
