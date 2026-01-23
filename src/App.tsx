@@ -11,9 +11,10 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Project />
       <About />
       <Skill />
-      <Project />
+      
       <Experience />
     </>
   );

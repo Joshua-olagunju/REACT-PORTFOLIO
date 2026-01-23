@@ -12,7 +12,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="   !py-10 !mt-20 flex flex-col  justify-center gap-10 !px-5 !px:md-20 "
+      className="mt-20  "
     >
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
         <div className="flex flex-col gap-2">

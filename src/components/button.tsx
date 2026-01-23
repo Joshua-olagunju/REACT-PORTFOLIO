@@ -39,7 +39,7 @@ export function Button({
   const backgroundClasses = {
     blue: "!bg-[#275b8f] !text-[#ffffff]",
     blueSecondary: "!bg-[#275b8f] !text-[#275b8f]",
-    black: "!bg-black !text-[#275b8f]",
+    black: "!bg-black !text-[#ffffff]",
     green: "!bg-[#83b541] !text-white",
   };
   const outlineClasses = {
@@ -63,8 +63,8 @@ export function Button({
     return (
       <a href={href} target={target} rel={rel} className={classNames}>
         <div className="flex items-center justify-center gap-2">
-          {icon && <span className="text-sm">{icon}</span>}
           {text}
+          {icon && <span className="text-sm">{icon}</span>}
         </div>
       </a>
     );
@@ -73,8 +73,8 @@ export function Button({
   return (
     <button {...props} className={classNames}>
       <div className="flex items-center justify-center gap-2">
-        {icon && <span className="text-sm">{icon}</span>}
         {text}
+        {icon && <span className="text-sm">{icon}</span>}
       </div>
     </button>
   );

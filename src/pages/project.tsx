@@ -1,5 +1,3 @@
-import { Button } from "../components/button";
-
 // ==================================
 // Project Component
 // ==================================
@@ -8,119 +6,65 @@ export function Project() {
   // Rendered JSX
   // ==================================
   return (
-    <section
-      id="projects"
-      className="py-20 md:py-30 flex flex-col items-center justify-center gap-10  w-full lg:w-5/6 !mx-auto   "
-    >
-      <div className="flex flex-col gap-2 !mx-5 items-center justify-center">
-        <div className="   text-start md:text-center flex flex-col gap-2">
-          <h1 className="text-6xl font-[500] mb-0">
-            My <span className="text-[#83b541]">Projects</span>
-          </h1>
-        </div>
+    <section id="projects" className="px-3">
+      {/* Heading */}
+      <div className="flex flex-col items-center gap-2 justify-center max-w-2xl mx-auto text-center">
+        <h1 className="text-4xl font-[500] mb-0">Highlights of my Projects</h1>
 
-        <div className="flex flex-col gap-2 items-center text-start md:text-center justify-center  ">
-          <h3 className="text-1xl font-[500] text-gray-500">
-            Here are some of my notable projects that showcase my skills in
-            front-end development and UI/UX design.
-          </h3>
-        </div>
+        <p className="text-sm text-gray-500">
+          A selection of projects that highlight my experience in frontend
+          development and UI/UX design.
+        </p>
       </div>
-      <div className=" flex items-center flex-col md:flex-row justify-center  !lg:mx-40 gap-10 !mx-5">
-        {/* Project Card 1 */}
+
+      {/* Grid */}
+      <div className="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div>
-          <img
-            src="/Screenshot 2026-01-03 084957.png"
-            alt="Project 1"
-            className="w-full object-contain rounded-md mb-4 h-48"
-          />
-          <div className="pt-5">
-            <h3 className="text-xl font-[600] mb-2">
-              Finance Tracking Web Application
-            </h3>
-            <p className="text-sm mb-4">
-              A finance management application for tracking projects, invoices,
-              and payments, designed to streamline financial records and
-              business workflows.
-            </p>
-            <div className="flex justify-between !mt-3">
-              {/* <Button
-                text="View Demo"
-                size="small"
-                buttonBackground="green"
-                className="flex !justify-end !mt-5  !px-5"
-              /> */}
-            </div>
-            <div className="flex flex-wrap gap-2 items-center text-sm font-medium">
-              <span>Tech Stack:</span>
-              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
-                Tailwind CSS
-              </span>
-              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
-                React.js
-              </span>
-              <span className="bg-gray-100 text-xs text-gray-800 px-2 py-1 rounded-full">
-                TypeScript
-              </span>
-            </div>
+          <div className="rounded-lg overflow-hidden aspect-video">
+            <img
+              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
+              alt="Project 3"
+              className="w-full h-full object-cover"
+            />
           </div>
-        </div>
-        {/* Project Card 1 */}
-        <div>
-          <img
-            src="/Screenshot 2026-01-17 002001.png"
-            alt="Project 1"
-            className="w-full object-cover rounded-md mb-4  h-48"
-          />
-          <div className="pt-5">
-            <h3 className="text-xl font-[600] mb-2">
-              {" "}
-              Corporate Fintech Website
-            </h3>
-            <p className="text-sm text-start mb-4">
+          <div className="flex flex-col gap-2 mt-2">
+            <p className="font-[500]">Coporate Fintech Website</p>
+            <p className="text-xs text-gray-500">
               A responsive fintech website built with React and Tailwind,
-              focusing on performance, user-centered design, and showcasing
-              digital solutions clearly and effectively.
+              focused on clear, user-friendly digital solutions.
             </p>
-            <div className="flex justify-between">
-              <Button
-                text="View Project"
-                size="small"
-                buttonBackground="green"
-                href="https://abvakonmobilesolutions.com/index.html"
-                target="_blank"
-                className="flex !justify-end !mt-5  !px-5"
-              />
-            </div>
           </div>
         </div>
         <div>
-          <img
-            src="/Screenshot 2026-01-17 003920.png"
-            alt="Project 1"
-            className="w-full object-cover rounded-md mb-4  h-48"
-          />
-          <div className="pt-5">
-            <h3 className="text-xl font-[600] mb-2">
-              {" "}
-              Personal Tech Journey Blog
-            </h3>
-            <p className="text-sm text-start mb-4">
-              A blog documenting my journey from beginner to front-end
-              developer, sharing lessons, challenges, and projects. Built to
-              reflect growth, persistence, and a commitment to learning and
-              helping others in tech.
+          <div className="rounded-lg overflow-hidden  aspect-video">
+            <img
+              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
+              alt="Project 3"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col gap-2 mt-2">
+            <p className="font-[500]">Coporate Fintech Website</p>
+            <p className="text-xs text-gray-500">
+              A responsive fintech website built with React and Tailwind,
+              focused on clear, user-friendly digital solutions.
             </p>
-            <div className="flex justify-between">
-              <Button
-                text="View Project"
-                size="small"
-                buttonBackground="green"
-                href="https://joshua-olagunju.github.io/My-Blog/"
-                target="_blank"
-                className="flex !justify-end !mt-5  !px-5"
-              />
-            </div>
+          </div>
+        </div>
+        <div>
+          <div className="rounded-lg overflow-hidden aspect-video ">
+            <img
+              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
+              alt="Project 3"
+              className=" w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col gap-2 mt-2">
+            <p className="font-[500]">Coporate Fintech Website</p>
+            <p className="text-xs text-gray-500">
+              A responsive fintech website built with React and Tailwind,
+              focused on clear, user-friendly digital solutions.
+            </p>
           </div>
         </div>
       </div>
