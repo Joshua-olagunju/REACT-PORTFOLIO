@@ -38,7 +38,7 @@ export function Project() {
               <Button
                 icon={<CgMediaLive />}
                 text="View Live"
-                buttonBackground="black"
+                buttonBackground="green"
                 size="small"
                 className="animate-pulse"
               />
@@ -72,12 +72,25 @@ export function Project() {
         </div>
 
         <div>
-          <div className="rounded-lg overflow-hidden aspect-video">
-            <img
-              src="/corebooks.com.ng_DashboardPages_MainDashboard.php (2).png"
-              alt="Finance Tracker"
-              className="w-full h-full object-cover"
-            />
+          <div className="relative">
+            <div className="rounded-lg overflow-hidden aspect-video">
+              <img
+                src="/corebooks.com.ng_DashboardPages_MainDashboard.php (2).png"
+                alt="Finance Tracker"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+            <div className="absolute top-2 right-2  ">
+              <Button
+                icon={<CgMediaLive />}
+                text="View Live"
+                buttonBackground="green"
+                size="small"
+                className="animate-pulse"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
             <p className="font-[500]">Finance Tracker</p>
@@ -103,12 +116,25 @@ export function Project() {
         </div>
 
         <div>
-          <div className="rounded-lg overflow-hidden aspect-video">
-            <img
-              src="/abvakonmobilesolutions.com_ (2).png"
-              alt="Fintech Website"
-              className="w-full h-full object-cover"
-            />
+          <div className="relative">
+            <div className="rounded-lg overflow-hidden aspect-video">
+              <img
+                src="/abvakonmobilesolutions.com_ (2).png"
+                alt="Fintech Website"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+            <div className="absolute top-2 right-2  ">
+              <Button
+                icon={<CgMediaLive />}
+                text="View Live"
+                buttonBackground="green"
+                size="small"
+                className="animate-pulse"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
             <p className="font-[500]">Fintech Website</p>
@@ -134,12 +160,25 @@ export function Project() {
         </div>
 
         <div>
-          <div className="rounded-lg overflow-hidden aspect-video ">
-            <img
-              src="/primbooks-nex-tjs-ta9c.vercel.app_login (1).png"
-              alt="Project 3"
-              className=" w-full h-full object-cover"
-            />
+          <div className="relative">
+            <div className="rounded-lg overflow-hidden aspect-video ">
+              <img
+                src="/primbooks-nex-tjs-ta9c.vercel.app_login (1).png"
+                alt="Project 3"
+                className=" w-full h-full object-cover"
+              />
+            </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+            <div className="absolute top-2 right-2 hidden ">
+              <Button
+                icon={<CgMediaLive />}
+                text="View Live"
+                buttonBackground="green"
+                size="small"
+                className="animate-pulse"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
             <p className="font-[500]"> Financial Fintech Web Application</p>
