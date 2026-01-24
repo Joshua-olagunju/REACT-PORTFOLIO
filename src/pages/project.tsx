@@ -18,23 +18,42 @@ export function Project() {
       </div>
 
       {/* Grid */}
-      <div className="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5">
         <div>
           <div className="rounded-lg overflow-hidden aspect-video">
             <img
-              src="/christopher-gower-m_HRfLhgABo-unsplash(1).jpg"
-              alt="Project 3"
+              src="/drift-tech-web.vercel.app_.png"
+              alt="DriftTech Website"
               className="w-full h-full object-cover"
             />
           </div>
+
           <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[500]">Coporate Fintech Website</p>
+            <p className="font-[500]">DriftTech Corporate Website</p>
+
             <p className="text-xs text-gray-500">
-              A responsive fintech website built with React and Tailwind,
-              focused on clear, user-friendly digital solutions.
+              A modern corporate fintech website focused on clean UI, smooth
+              animations, and clear presentation of digital solutions.
             </p>
+
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2 mt-1">
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                React
+              </span>
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                TypeScript
+              </span>
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                Tailwind CSS
+              </span>
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                Framer Motion
+              </span>
+            </div>
           </div>
         </div>
+
         <div>
           <div className="rounded-lg overflow-hidden  aspect-video">
             <img
@@ -65,6 +84,37 @@ export function Project() {
               A responsive fintech website built with React and Tailwind,
               focused on clear, user-friendly digital solutions.
             </p>
+          </div>
+        </div>
+        <div>
+          <div className="rounded-lg overflow-hidden aspect-video ">
+            <img
+              src="/primbooks-nex-tjs-ta9c.vercel.app_login (1).png"
+              alt="Project 3"
+              className=" w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col gap-2 mt-2">
+            <p className="font-[500]"> Financial Fintech Web Application</p>
+
+            <p className="text-xs text-gray-500">
+              A fintech web interface built with Next.js, TypeScript, and
+              Tailwind CSS, focused on clean UI, responsive layouts, and
+              intuitive user experience.
+            </p>
+
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2 mt-1">
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                Next.js
+              </span>
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                TypeScript
+              </span>
+              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                Tailwind CSS
+              </span>
+            </div>
           </div>
         </div>
       </div>
