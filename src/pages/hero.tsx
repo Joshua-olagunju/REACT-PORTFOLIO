@@ -24,7 +24,7 @@ export function Hero() {
       <section id="home" className="  py-40  px-3">
         <div className=" flex flex-col items-center justify-center text-center   gap-2">
           <h2 className="text-5xl md:text-6xl font-[600] mb-2 max-w-3xl">
-            Where Code Meets Design
+            Where <span className="text-[#83b541]"> Code </span>Meets  <span className="text-[#83b541]">Design</span>
           </h2>
 
           <h2 className="text-xl md:text-2xl font-medium tracking-wide text-gray-600">
@@ -50,7 +50,7 @@ export function Hero() {
             text="Hire Me"
             buttonBackground="green"
             size="small"
-            className=" px-10 py-3"
+            className=" px-10 py-3 animate-pulse"
             icon={<IoChevronForward />}
           />
         </div>
