@@ -10,9 +10,9 @@ export function Header() {
   const [mobileBar, setMobileBar] = useState(false);
   return (
     <>
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50 ">
         <header className=" bg-[#262626]   !px-5 !md:px-20 py-3">
-          <div className="flex justify-between items-center ">
+          <div className="flex justify-between items-center max-w-5xl mx-auto">
             <div>
               <img
                 src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
@@ -31,8 +31,8 @@ export function Header() {
           </div>
         </header>
 
-        <div className="bg-[#FFFFFF] shadow   !px-5">
-          <ul className="   cursor-pointer text-sm flex h-12 space-x-4  py-7 gap-10 items-center justify-between ">
+        <div className="bg-[#FFFFFF] shadow   px-3">
+          <ul className=" max-w-5xl mx-auto cursor-pointer text-sm flex h-12   py-7 gap-10 items-center justify-between ">
             <div className="flex items-center gap-4">
             <div className="rounded-full h-12 w-12 overflow-hidden">
               <img
@@ -51,15 +51,15 @@ export function Header() {
               onClick={() => setMobileBar((prev) => !prev)}
             />
 
-            <div className="hidden md:flex gap-15 items-center justify-center flex-1  ">
-              <li>
-                <a href="#home">Home</a>
+            <div className="hidden md:flex gap-15 items-center justify-center text-gray-600">
+              <li className="">
+                <a href="#home" className="hover:text-[#83b541] transition">Home</a>
               </li>
               <li>
-                <a href="#">Skills</a>
+                <a href="#" className="hover:text-[#83b541] transition">Skills</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" className="hover:text-[#83b541] transition">Projects</a>
               </li>
             </div>
           </ul>

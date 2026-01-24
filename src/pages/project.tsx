@@ -10,8 +10,8 @@ export function Project() {
   return (
     <section id="projects" className="px-3">
       {/* Heading */}
-      <div className="flex flex-col items-center gap-2 justify-center max-w-2xl mx-auto text-start md:text-center">
-        <h1 className="text-3xl font-[500] mb-0">
+      <div className="flex flex-col items-start md:items-center gap-2 justify-center max-w-2xl mx-auto text-start md:text-center">
+        <h1 className="text-3xl text-start md:text-center font-[500] mb-0">
           Highlights of my <span className="text-[#83b541]">Projects</span>
         </h1>
 
@@ -22,8 +22,8 @@ export function Project() {
       </div>
 
       {/* Grid */}
-      <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
-        <div>
+      <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-5">
+        <div className="p-5 shadow-md rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
               <img
@@ -33,7 +33,7 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+
             <div className="absolute top-2 right-2  ">
               <Button
                 icon={<CgMediaLive />}
@@ -46,7 +46,9 @@ export function Project() {
           </div>
 
           <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[500]">DriftTech Corporate Website</p>
+            <p className="font-[600] text-[#83b541]">
+              DriftTech Corporate Website
+            </p>
 
             <p className="text-xs text-gray-500">
               A modern corporate fintech website focused on clean UI, smooth
@@ -71,7 +73,7 @@ export function Project() {
           </div>
         </div>
 
-        <div>
+        <div className="p-5 shadow-md rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video">
               <img
@@ -81,7 +83,7 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+
             <div className="absolute top-2 right-2  ">
               <Button
                 icon={<CgMediaLive />}
@@ -93,7 +95,7 @@ export function Project() {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[500]">Finance Tracker</p>
+            <p className="font-[600] text-[#83b541]">Finance Tracker</p>
             <p className="text-xs text-gray-500">
               A responsive finance tracking web app built with JavaScript, PHP,
               and Tailwind CSS, featuring clear dashboards and user-friendly
@@ -115,7 +117,7 @@ export function Project() {
           </div>
         </div>
 
-        <div>
+        <div className="p-5 shadow-md rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video">
               <img
@@ -125,7 +127,7 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+
             <div className="absolute top-2 right-2  ">
               <Button
                 icon={<CgMediaLive />}
@@ -137,7 +139,7 @@ export function Project() {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[500]">Fintech Website</p>
+            <p className="font-[600] text-[#83b541]">Fintech Website</p>
             <p className="text-xs text-gray-500">
               A responsive fintech website built with HTML5, JavaScript, and
               Bootstrap, featuring clean layouts and user-friendly interface
@@ -159,7 +161,7 @@ export function Project() {
           </div>
         </div>
 
-        <div>
+        <div className="p-5 shadow-md rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
               <img
@@ -169,7 +171,7 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/10 rounded-lg"></div>
+
             <div className="absolute top-2 right-2 hidden ">
               <Button
                 icon={<CgMediaLive />}
@@ -181,7 +183,10 @@ export function Project() {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[500]"> Financial Fintech Web Application</p>
+            <p className="font-[600] text-[#83b541]">
+              {" "}
+              Financial Fintech Web Application
+            </p>
 
             <p className="text-xs text-gray-500">
               A fintech web interface built with Next.js, TypeScript, and
