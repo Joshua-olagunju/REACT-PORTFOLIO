@@ -46,9 +46,7 @@ export function Project() {
           </div>
 
           <div className="flex flex-col gap-2 mt-5">
-            <p className="font-[600] ">
-              DriftTech Corporate Website
-            </p>
+            <p className="font-[600] ">DriftTech Corporate Website</p>
 
             <p className="text-xs text-gray-500 leading-loose">
               A modern corporate fintech website focused on clean UI, smooth
@@ -87,7 +85,7 @@ export function Project() {
             <div className="absolute top-2 right-2  ">
               <Button
                 icon={<CgMediaLive />}
-                text="View Live"
+                text="View Case Study"
                 buttonBackground="green"
                 size="small"
                 className="animate-pulse"
@@ -134,7 +132,10 @@ export function Project() {
                 text="View Live"
                 buttonBackground="green"
                 size="small"
-                className="animate-pulse"
+                href="https://abvakonmobilesolutions.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="animate-pulse "
               />
             </div>
           </div>
@@ -183,10 +184,7 @@ export function Project() {
             </div>
           </div>
           <div className="flex flex-col gap-2 mt-5">
-            <p className="font-[600]  ">
-              {" "}
-              Financial Fintech Web Application
-            </p>
+            <p className="font-[600]  "> Financial Fintech Web Application</p>
 
             <p className="text-xs text-gray-500 leading-loose">
               A fintech web interface built with Next.js, TypeScript, and
