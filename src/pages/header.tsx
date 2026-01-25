@@ -1,7 +1,7 @@
 import { Button } from "../components/button";
 import { MdOutlineMenu } from "react-icons/md";
 import { MdCallSplit } from "react-icons/md";
-
+import { LiaTimesSolid } from "react-icons/lia";
 import { useState } from "react";
 // ==================================
 // Header Component
@@ -34,38 +34,53 @@ export function Header() {
         <div className="bg-[#FFFFFF] shadow   px-3">
           <ul className=" max-w-5xl mx-auto cursor-pointer text-sm flex h-12   py-7 gap-10 items-center justify-between ">
             <div className="flex items-center gap-4">
-            <div className="rounded-full h-12 w-12 overflow-hidden">
-              <img
-                src="/MyAboutImage.jpeg"
-                alt=""
-                className="rounded-full object-fit-cover"
-              />
-            </div>
-            <div className="flex items-center ">
-              <p className="font-[500] text-md">Joshua Olagunju</p>
-            </div>
+              <div className="rounded-full h-12 w-12 overflow-hidden">
+                <img
+                  src="/MyAboutImage.jpeg"
+                  alt=""
+                  className="rounded-full object-fit-cover"
+                />
+              </div>
+              <div className="flex items-center ">
+                <p className="font-[500] text-md">Joshua Olagunju</p>
+              </div>
             </div>
 
-            <MdOutlineMenu
-              className="text-3xl   block md:hidden   cursor-pointer "
-              onClick={() => setMobileBar((prev) => !prev)}
-            />
+             <div className="md:hidden">
+            {mobileBar === true ? (
+              <LiaTimesSolid
+                className="text-3xl    cursor-pointer "
+                onClick={() => setMobileBar((prev) => !prev)}
+              />
+            ) : (
+              <MdOutlineMenu 
+                className="text-3xl    cursor-pointer "
+                onClick={() => setMobileBar((prev) => !prev)}
+              />
+            )}
+          </div>
 
             <div className="hidden md:flex gap-15 items-center justify-center text-gray-600">
               <li className="">
-                <a href="#home" className="hover:text-[#83b541] transition">Home</a>
+                <a href="#home" className="hover:text-[#83b541] transition">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#83b541] transition">Skills</a>
+                <a href="#skills" className="hover:text-[#83b541] transition">
+                  Skills
+                </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-[#83b541] transition">Projects</a>
+                <a href="#projects" className="hover:text-[#83b541] transition">
+                  Projects
+                </a>
               </li>
             </div>
           </ul>
         </div>
         {mobileBar && (
-          <div className="mb-0 bg-[#ffffff] shadow-sm rounded-b-lg">
+          <div className="mb-0 bg-[#ffffff]   rounded-b-lg">
             {/* Mobile Menu can be implemented here */}
 
             <ul
@@ -78,7 +93,7 @@ export function Header() {
               </li>
               <li>
                 {" "}
-                <a href="# ">SKILLS</a>
+                <a href="#skills ">SKILLS</a>
               </li>
               <li>
                 {" "}

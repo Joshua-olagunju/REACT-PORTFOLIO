@@ -61,11 +61,9 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} target={target} rel={rel} className={classNames}>
-        <div className="flex items-center justify-center gap-2">
-          {text}
-          {icon && <span className="text-sm">{icon}</span>}
-        </div>
+      <a href={href} target={target} rel={rel} className={`${classNames} inline-flex items-center justify-center gap-2`}>
+        {text}
+        {icon && <span className="text-sm">{icon}</span>}
       </a>
     );
   }

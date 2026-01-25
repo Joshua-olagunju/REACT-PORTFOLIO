@@ -9,8 +9,12 @@ export function Skill() {
   // ==================================
   return (
     <>
-      <section className="max-w-5xl mx-auto  px-3">
-        <div id="skills">
+      <section
+        id="skills"
+        style={{ paddingTop: "150px", marginTop: "-100px" }}
+        className="max-w-5xl mx-auto  px-3"
+      >
+        <div>
           <div className="text-xs text-[#83b541] mb-5 bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
             <CiStar className="text-center" size={20} />
             Skills

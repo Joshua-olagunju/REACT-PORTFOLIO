@@ -9,7 +9,7 @@ export function Project() {
   // Rendered JSX
   // ==================================
   return (
-    <section id="projects" className="px-3">
+    <section id="projects" style={{ paddingTop: "150px", marginTop: "-100px" }} className="px-3">
       {/* Heading */}
       <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
         <CiStar className="text-center" size={20} />
@@ -40,6 +40,9 @@ export function Project() {
                 text="View Live"
                 buttonBackground="green"
                 size="small"
+                href="https://drift-tech-web.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
                 className="animate-pulse"
               />
             </div>
