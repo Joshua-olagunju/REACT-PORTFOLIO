@@ -1,5 +1,5 @@
 import { Button } from "../components/button";
-
+import { CiStar } from "react-icons/ci";
 import { FaRegFileAlt } from "react-icons/fa";
 
 // ==================================
@@ -11,18 +11,19 @@ export function About() {
   // ==================================
   return (
     <section id="about" className="py-20 px-3 mt-10  ">
+      <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
+        <CiStar className="text-center" size={20} /> About Me
+      </div>
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
         <div className="flex flex-col gap-2">
-          <div className=" !text-start  flex flex-col gap-2">
-            <h1 className="text-4xl font-[600] mb-0">
-              About <span className="text-[#83b541]">me</span>
-            </h1>
+          <div className="text-start md:text-center mt-2  flex flex-col gap-2">
+            <h4 className="text-2xl font-[600] text-center">
+              GET TO KNOW MORE ABOUT ME
+            </h4>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5  max-w-4xl">
+          <div className="max-w-7xl mx-auto">
             <div className="flex flex-col gap-6 items-start  ">
-              <h4 className="text-md font-[500]">GET TO KNOW MORE ABOUT ME</h4>
-
-              <p className="text-sm max-w-3xl text-gray-600 leading-relaxed">
+              <p className="text-sm max-w-3xl text-gray-600 leading-loose">
                 I'm a passionate Frontend Developer and UI/UX Designer who
                 builds modern, responsive websites and applications using React,
                 Next.js, TypeScript, and Tailwind CSS. I enjoy turning complex
@@ -30,7 +31,7 @@ export function About() {
                 core tools and skills highlighted through the icons below.
               </p>
 
-              <p className="text-sm max-w-3xl text-gray-600 leading-relaxed">
+              <p className="text-sm max-w-3xl text-gray-600  leading-loose">
                 Beyond development, I’m driven by continuous learning and
                 creative problem-solving. I enjoy refining user experiences,
                 experimenting with new approaches, and working closely with
@@ -40,19 +41,13 @@ export function About() {
 
               <Button
                 text="RESUME"
-                size="large"
+                size="small"
                 className="w-50 py-3 "
                 buttonBackground="green"
                 icon={<FaRegFileAlt />}
                 href="https://drive.google.com/file/d/1F5_aK8NCaFkAE-BxBaQgNYMu4h78Ps9_/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
-              />
-            </div>
-            <div className="flex flex-col gap-2 h-70 w-70 overflow-hidden">
-              <img
-                src="/MyAboutImage.jpeg"
-                className="rounded-full w-full h-full object-cover"
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { Button } from "../components/button";
 import { CgMediaLive } from "react-icons/cg";
+import { CiStar } from "react-icons/ci";
 // ==================================
 // Project Component
 // ==================================
@@ -10,19 +11,18 @@ export function Project() {
   return (
     <section id="projects" className="px-3">
       {/* Heading */}
-      <div className="flex flex-col items-start md:items-center gap-2 justify-center max-w-2xl mx-auto text-start md:text-center">
-        <h1 className="text-3xl text-start md:text-center font-[500] mb-0">
-          Highlights of my <span className="text-[#83b541]">Projects</span>
-        </h1>
-
-        <p className="text-sm text-gray-500">
-          A selection of projects that highlight my experience in frontend
-          development and UI/UX design.
-        </p>
+      <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
+        <CiStar className="text-center" size={20} />
+        My Works
+      </div>
+      <div className="flex flex-col items-center gap-2 justify-center max-w-2xl mx-auto text-center mt-2">
+        <h4 className="text-2xl font-[600] text-center">
+          HIGHLIGHTS OF MY PROJECTS
+        </h4>
       </div>
 
       {/* Grid */}
-      <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-5">
+      <div className="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-5">
         <div className="p-5 shadow-md rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
