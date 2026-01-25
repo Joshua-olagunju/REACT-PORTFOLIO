@@ -11,7 +11,7 @@ export function Project() {
   return (
     <section id="projects" style={{ paddingTop: "150px", marginTop: "-100px" }} className="px-3">
       {/* Heading */}
-      <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
+      <div className="mb-3 text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
         <CiStar className="text-center" size={20} />
         My Works
       </div>

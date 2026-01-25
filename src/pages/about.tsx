@@ -11,7 +11,7 @@ export function About() {
   // ==================================
   return (
     <section id="about" className="py-20 px-3 mt-10  ">
-      <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
+      <div className="mb-3 text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
         <CiStar className="text-center" size={20} /> About Me
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
