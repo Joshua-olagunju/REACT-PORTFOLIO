@@ -27,6 +27,7 @@ export function Header() {
               size="small"
               buttonBackground="green"
               icon={<MdCallSplit />}
+              href="#contact"
               className=" "
             />
           </div>

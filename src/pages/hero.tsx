@@ -56,6 +56,7 @@ export function Hero() {
             size="small"
             className=" px-10 py-3  "
             icon={<IoChevronForward />}
+            href="#contact"
           />
         </div>
       </section>
