@@ -23,7 +23,7 @@ export function Project() {
 
       {/* Grid */}
       <div className="max-w-7xl mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-5">
-        <div className="p-5 shadow-md rounded-md">
+        <div className="p-5 shadow-sm rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
               <img
@@ -45,12 +45,12 @@ export function Project() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[600] text-[#83b541]">
+          <div className="flex flex-col gap-2 mt-5">
+            <p className="font-[600] ">
               DriftTech Corporate Website
             </p>
 
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-500 leading-loose">
               A modern corporate fintech website focused on clean UI, smooth
               animations, and clear presentation of digital solutions.
             </p>
@@ -73,7 +73,7 @@ export function Project() {
           </div>
         </div>
 
-        <div className="p-5 shadow-md rounded-md">
+        <div className="p-5 shadow-sm rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video">
               <img
@@ -94,9 +94,9 @@ export function Project() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[600] text-[#83b541]">Finance Tracker</p>
-            <p className="text-xs text-gray-500">
+          <div className="flex flex-col gap-2 mt-5">
+            <p className="font-[600]  ">Finance Tracker</p>
+            <p className="text-xs text-gray-500 leading-loose">
               A responsive finance tracking web app built with JavaScript, PHP,
               and Tailwind CSS, featuring clear dashboards and user-friendly
               interfaces.
@@ -117,7 +117,7 @@ export function Project() {
           </div>
         </div>
 
-        <div className="p-5 shadow-md rounded-md">
+        <div className="p-5 shadow-sm rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video">
               <img
@@ -138,9 +138,9 @@ export function Project() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[600] text-[#83b541]">Fintech Website</p>
-            <p className="text-xs text-gray-500">
+          <div className="flex flex-col gap-2 mt-5">
+            <p className="font-[600]  ">Fintech Website</p>
+            <p className="text-xs text-gray-500 leading-loose">
               A responsive fintech website built with HTML5, JavaScript, and
               Bootstrap, featuring clean layouts and user-friendly interface
               design.
@@ -161,7 +161,7 @@ export function Project() {
           </div>
         </div>
 
-        <div className="p-5 shadow-md rounded-md">
+        <div className="p-5 shadow-sm rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
               <img
@@ -182,13 +182,13 @@ export function Project() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2 mt-2">
-            <p className="font-[600] text-[#83b541]">
+          <div className="flex flex-col gap-2 mt-5">
+            <p className="font-[600]  ">
               {" "}
               Financial Fintech Web Application
             </p>
 
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-500 leading-loose">
               A fintech web interface built with Next.js, TypeScript, and
               Tailwind CSS, focused on clean UI, responsive layouts, and
               intuitive user experience.
