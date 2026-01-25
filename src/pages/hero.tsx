@@ -21,7 +21,7 @@ export function Hero() {
   // ==================================
   return (
     <>
-      <section id="home" className="  py-40  px-3">
+      <section id="home" className="  pt-40 pb-20  px-3">
         <div className=" flex flex-col items-center justify-center text-center   gap-2">
           <h2 className="text-5xl  font-[500] mb-2 max-w-3xl">
             Where <span className="text-[#83b541]"> Code </span>Meets{" "}
