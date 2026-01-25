@@ -13,7 +13,7 @@ export function Skill() {
         <div id="skills">
           <div className="text-xs text-[#83b541] mb-5 bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
             <CiStar className="text-center" size={20} />
-           Skills
+            Skills
           </div>
           <div className="text-center mb-4">
             <h4 className="text-2xl font-[600] text-center">
@@ -22,7 +22,7 @@ export function Skill() {
           </div>
 
           <div className="w-full  flex flex-col gap-5 md:flex-row justify-center items-center">
-            <div className="shadow-sm p-5 rounded flex gap-3 bg-white flex-col w-full ">
+            <div className="shadow-sm p-5 rounded flex gap-3  flex-col w-full ">
               <div className="mb-5 text-center text-1xl font-[500]">
                 <h1>Frontend</h1>
               </div>
@@ -78,7 +78,7 @@ export function Skill() {
                 </div>
               </div>
             </div>
-            <div className="shadow-sm p-5 rounded flex gap-3  bg-white  flex-col w-full  ">
+            <div className="shadow-sm p-5 rounded flex gap-3    flex-col w-full  ">
               <div className="mb-5 text-center text-1xl font-[500]">
                 <h1>Tools</h1>
               </div>
@@ -134,7 +134,7 @@ export function Skill() {
                 </div>
               </div>
             </div>
-            <div className="shadow-sm p-5 rounded flex gap-3  bg-white  flex-col w-full  ">
+            <div className="shadow-sm p-5 rounded flex gap-3   flex-col w-full  ">
               <div className="mb-5 text-center text-1xl font-[500]">
                 <h1>UI/UX</h1>
               </div>
