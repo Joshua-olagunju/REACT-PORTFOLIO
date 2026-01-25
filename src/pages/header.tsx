@@ -3,6 +3,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import { MdCallSplit } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
 import { useState } from "react";
+import { IoChevronDown } from "react-icons/io5";
 // ==================================
 // Header Component
 // ==================================
@@ -46,19 +47,19 @@ export function Header() {
               </div>
             </div>
 
-             <div className="md:hidden">
-            {mobileBar === true ? (
-              <LiaTimesSolid
-                className="text-3xl    cursor-pointer "
-                onClick={() => setMobileBar((prev) => !prev)}
-              />
-            ) : (
-              <MdOutlineMenu 
-                className="text-3xl    cursor-pointer "
-                onClick={() => setMobileBar((prev) => !prev)}
-              />
-            )}
-          </div>
+            <div className="md:hidden">
+              {mobileBar === true ? (
+                <LiaTimesSolid
+                  className="text-3xl    cursor-pointer "
+                  onClick={() => setMobileBar((prev) => !prev)}
+                />
+              ) : (
+                <MdOutlineMenu
+                  className="text-3xl    cursor-pointer "
+                  onClick={() => setMobileBar((prev) => !prev)}
+                />
+              )}
+            </div>
 
             <div className="hidden md:flex gap-15 items-center justify-center text-gray-600">
               <li className="">
@@ -67,8 +68,8 @@ export function Header() {
                 </a>
               </li>
               <li>
-                <a href="#skills" className="hover:text-[#83b541] transition">
-                  Skills
+                <a href="#skills" className="hover:text-[#83b541] transition flex items-center gap-1">
+                  Skills <IoChevronDown size={14} />
                 </a>
               </li>
               <li>

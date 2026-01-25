@@ -37,7 +37,7 @@ export function FAQs() {
   ];
 
   return (
-    <section className="py-10 max-w-4xl mx-auto text-center px-3">
+    <section className="py-10 max-w-3xl mx-auto text-center px-3">
       <div className="text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full   w-fit mx-auto border-[#4682A9]/20">
         <CiStar className="text-center" size={20} /> FAQs
       </div>
