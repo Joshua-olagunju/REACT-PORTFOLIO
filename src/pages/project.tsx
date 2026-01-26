@@ -265,16 +265,6 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-
-            <div className="absolute top-2 right-2  ">
-              <Button
-                icon={<CgMediaLive />}
-                text="View Case Study"
-                buttonBackground="green"
-                size="small"
-                className="animate-pulse"
-              />
-            </div>
           </div>
           <div className="flex flex-col gap-2 mt-5">
             <p className="font-[700] text-lg">Finance Tracker</p>
@@ -284,17 +274,29 @@ export function Project() {
               interfaces.
             </p>
 
-            {/* Tech Stack */}
-            <div className="flex flex-wrap gap-2 mt-1">
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                JavaScript
-              </span>
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                PHP
-              </span>
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                Tailwind CSS
-              </span>
+            <div className="flex flex-col md:flex-row gap-4  items-start md:items-center justify-between">
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mt-1">
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  JavaScript
+                </span>
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  PHP
+                </span>
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  Tailwind CSS
+                </span>
+              </div>
+
+              <div className="  ">
+                <Button
+                  icon={<CgMediaLive />}
+                  text="View Case Study"
+                  buttonBackground="green"
+                  size="small"
+           
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -309,19 +311,6 @@ export function Project() {
               />
             </div>
             {/* Overlay */}
-
-            <div className="absolute top-2 right-2  ">
-              <Button
-                icon={<CgMediaLive />}
-                text="View Live"
-                buttonBackground="green"
-                size="small"
-                href="https://abvakonmobilesolutions.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="animate-pulse "
-              />
-            </div>
           </div>
           <div className="flex flex-col gap-2 mt-5">
             <p className="font-[700] text-lg">Fintech Website</p>
@@ -331,21 +320,34 @@ export function Project() {
               design.
             </p>
 
-            {/* Tech Stack */}
-            <div className="flex flex-wrap gap-2 mt-1">
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                HTML5
-              </span>
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                JavaScript
-              </span>
-              <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
-                Bootstrap
-              </span>
+            <div className="flex flex-col md:flex-row gap-4  items-start md:items-center justify-between">
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mt-1">
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  HTML5
+                </span>
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  JavaScript
+                </span>
+                <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
+                  Bootstrap
+                </span>
+              </div>
+
+              <div className="  ">
+                <Button
+                  icon={<CgMediaLive />}
+                  text="View Live"
+                  buttonBackground="green"
+                  size="small"
+                  href="https://abvakonmobilesolutions.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                />
+              </div>
             </div>
           </div>
         </div>
-
         <div className="p-5 shadow-sm rounded-md">
           <div className="relative">
             <div className="rounded-lg overflow-hidden aspect-video ">
