@@ -51,7 +51,7 @@ export function Project() {
               animations, and clear presentation of digital solutions.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-4  items-start md:items-center justify-between">
+            <div className="flex flex-col lg:flex-row gap-4  items-start lg:items-center justify-between">
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mt-1">
                 <span className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">
