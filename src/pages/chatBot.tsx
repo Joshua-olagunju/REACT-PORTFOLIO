@@ -28,7 +28,7 @@ export function ChatBot() {
       ]);
     }, 800);
 
-    setMessage(""); // clear input
+    setMessage(""); 
   };
 
   return (
@@ -46,7 +46,7 @@ export function ChatBot() {
         </div>
       </div>
 
-      {/* Chat window */}
+   
       {open && (
         <div className="fixed bottom-20 right-5 w-80 h-96 bg-white rounded-sm shadow-lg flex flex-col overflow-hidden z-50">
           <div className="bg-[#83b541] text-white p-3 text-sm  flex justify-between items-center">

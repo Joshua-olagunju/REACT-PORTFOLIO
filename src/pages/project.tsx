@@ -1,9 +1,6 @@
 import { Button } from "../components/button";
 import { CgMediaLive } from "react-icons/cg";
 import { CiStar } from "react-icons/ci";
-import { FcIdea } from "react-icons/fc";
-import { Modal } from "../components/modal";
-import { useState } from "react";
 // ==================================
 // Project Component
 // ==================================
