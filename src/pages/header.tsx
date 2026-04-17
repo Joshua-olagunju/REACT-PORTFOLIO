@@ -4,6 +4,7 @@ import { MdCallSplit } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
 import { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
+import { MdCall } from "react-icons/md";
 // ==================================
 // Header Component
 // ==================================
@@ -62,8 +63,12 @@ export function Header() {
               )}
             </div>
 
-            <div className="hidden md:flex gap-15 items-center justify-center text-gray-600">
-              <li className="">
+          
+
+            <div className="hidden text-xs md:flex gap-8 items-center justify-center text-gray-600">
+            <div>
+              <p className="flex items-center gap-1 text-xs text-[#83b541] hover:underline"><MdCall size={24}/> +2349037498695</p>
+            </div>    <li className="">
                 <a href="#home" className="hover:text-[#83b541] transition">
                   Home
                 </a>
