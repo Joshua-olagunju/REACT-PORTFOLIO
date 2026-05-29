@@ -67,7 +67,7 @@ export function FAQs() {
                 className={`p-3 text-sm text-gray-600 text-start overflow-hidden transition-all duration-500 ease-in-out ${
                   openIndex === index
                     ? "max-h-[1000px] opacity-100"
-                    : "max-h-0 opacity-0"
+                    : "max-h-0 opacity-0 "
                 }`}
               >
                 {faq.answer}

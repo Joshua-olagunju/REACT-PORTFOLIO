@@ -1,7 +1,6 @@
 import { Button } from "../components/button";
 import { CgMediaLive } from "react-icons/cg";
 import { CiStar } from "react-icons/ci";
-
 // ==================================
 // Project Component
 // ==================================
