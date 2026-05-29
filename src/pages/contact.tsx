@@ -7,11 +7,10 @@ import { GrLinkedin } from "react-icons/gr";
 // Project Component
 // ==================================
 export function Contact() {
-
-//     const handleEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
-//   e.preventDefault(); // prevent form submission
-//   alert("Coming soon");
-// };
+  //     const handleEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
+  //   e.preventDefault(); // prevent form submission
+  //   alert("Coming soon");
+  // };
 
   // ==================================
   // Rendered JSX
@@ -63,7 +62,7 @@ export function Contact() {
             <h6>Connect with me </h6>
             <p className="text-sm text-gray-600">
               <a
-                href="https://www.linkedin.com/in/your-profile/"
+                href="https://www.linkedin.com/in/joshuaolagunju/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BPwMW3rxnSVydpulmkClCtA%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline text-[#83b541] "
@@ -73,7 +72,6 @@ export function Contact() {
             </p>
           </div>
         </div>
-        
       </div>
     </section>
   );
