@@ -74,7 +74,7 @@ export function Footer() {
       </section>
       <div className="  mb-auto bg-[#83b541] py-4 flex items-center justify-center">
         <p className="text-center text-sm text-white  ">
-          &copy; 2024 Joshua Olagunju. All rights reserved.
+          &copy; 2026 Joshua Olagunju. All rights reserved.
         </p>
       </div>
     </>
