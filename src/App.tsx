@@ -4,7 +4,6 @@ import { About } from "./pages/about";
 import { Experience } from "./pages/experience";
 import { Skill } from "./pages/skill";
 import { Project } from "./pages/project";
-import { ChatBot } from "./pages/chatBot";
 import { FAQs } from "./pages/faq";
 import { Contact } from "./pages/contact";
 import { Footer } from "./pages/footer";
@@ -19,7 +18,6 @@ function App() {
       <Project />
       <Experience />
       <About />
-      <ChatBot />
       <Skill />
       <FAQs />
       <Contact />

@@ -8,7 +8,7 @@ const projects = [
     alt: "Fintech Website",
     title: "Kings Guard Website",
     description:
-      "A responsive corporate website that makes services, trust signals, and contact paths easy to find across every screen size.",
+      "Built in partnership with Sodatim Technologies, where I contributed as the front-end developer. I helped turn the team’s direction into a responsive corporate website with clear service information, trust signals, and contact paths.",
     stack: ["React", "TypeScript", "Node.js", "Tailwind CSS"],
     liveUrl: "https://kings-guard-gamma.vercel.app/",
   },
@@ -30,6 +30,15 @@ const projects = [
     stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://sodatim.com/",
   },
+  {
+    image: "/primbooks-portfolio.png",
+    alt: "Primbooks finance platform team and interface",
+    title: "PrimBooks Landing Page",
+    description:
+      "I translated UI designs created by fellow UI/UX designers into polished, responsive front-end screens for Primbooks. My work focused on building reusable interface components, fluid interactions, and a consistent finance-product experience across the site.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
+    liveUrl: "https://primbooks-landing-page.vercel.app/",
+  },
 ];
 
 type ProjectCardProps = {
@@ -50,7 +59,7 @@ function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <article className="group bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+    <article className="group bg-white border border-gray-200 rounded-sm overflow-hidden h-full flex flex-col hover:border-[#83b541]/60 transition-colors duration-300">
       <div className="overflow-hidden aspect-video bg-gray-100">
         <img src={image} alt={alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
       </div>

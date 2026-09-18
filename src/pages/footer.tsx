@@ -1,9 +1,10 @@
 import { GrLinkedin } from "react-icons/gr";
 import { MdOutlineWhatsapp, MdEmail } from "react-icons/md";
-import { Button } from "../components/button";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const quickLinks = [
   { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
 ];
@@ -14,84 +15,77 @@ const socials = [
   { icon: MdEmail, href: "mailto:olagunjujoshua11@gmail.com", label: "Email" },
 ];
 
-// ==================================
-// Footer Component
-// ==================================
 export function Footer() {
   return (
-    <div>
-      <section className="bg-[#262626] flex items-center justify-center">
-        <footer className="max-w-5xl mx-auto text-gray-300 px-3 w-full py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
-            <div>
-              <img
-                src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
-                alt="Joshua Olagunju logo"
-                className="w-28 h-auto object-contain"
-              />
-              <Button
-                text="Hire Me"
-                size="medium"
-                buttonBackground="green"
-                href="#contact"
-                className="mt-5 px-10"
-              />
-            </div>
+    <footer className="bg-[#262626] text-gray-300 mt-10">
+      <div className="max-w-6xl mx-auto px-5 md:px-8 pt-16 pb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.45fr_0.8fr_1fr] gap-12 pb-14 border-b border-white/10">
+          <div>
+            <img
+              src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
+              alt="Joshua Olagunju logo"
+              className="w-28 h-auto object-contain mb-6"
+            />
+            <h3 className="text-2xl md:text-3xl font-semibold text-white max-w-md leading-tight">
+              Let&apos;s make your next digital product feel effortless.
+            </h3>
+            <p className="text-sm text-gray-400 leading-6 mt-4 max-w-md">
+              Available for front-end roles, freelance work, and product collaborations.
+            </p>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-[#a6d366] hover:text-white transition-colors"
+            >
+              Start a conversation <FiArrowUpRight />
+            </a>
+          </div>
 
-            <div>
-              <h4 className="text-[#83b541] text-xl">Contact</h4>
-              <div className="flex flex-col gap-3 mt-4 text-sm">
-                <a href="tel:+2349037498695" className="hover:text-[#83b541] transition">
-                  +234 903 749 8695
-                </a>
-                <a
-                  href="mailto:olagunjujoshua11@gmail.com"
-                  className="hover:text-[#83b541] transition"
-                >
-                  olagunjujoshua11@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-[#83b541] text-xl">Quick links</h4>
-              <ul className="flex flex-col gap-3 mt-4 text-sm">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-[#a6d366] mb-5">Explore</p>
+            <nav aria-label="Footer navigation">
+              <ul className="space-y-3 text-sm">
                 {quickLinks.map(({ href, label }) => (
                   <li key={href}>
-                    <a href={href} className="hover:text-[#83b541] transition">
-                      {label}
-                    </a>
+                    <a href={href} className="hover:text-[#a6d366] transition-colors">{label}</a>
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
+          </div>
 
-            <div>
-              <h4 className="text-[#83b541] text-xl">Socials</h4>
-              <div className="flex items-center gap-3 mt-4">
-                {socials.map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target={href.startsWith("http") ? "_blank" : undefined}
-                    rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    aria-label={label}
-                    className="text-2xl text-[#83b541] hover:opacity-70 transition"
-                  >
-                    <Icon />
-                  </a>
-                ))}
-              </div>
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-[#a6d366] mb-5">Get in touch</p>
+            <div className="space-y-3 text-sm">
+              <a href="mailto:olagunjujoshua11@gmail.com" className="block hover:text-[#a6d366] transition-colors break-all">
+                olagunjujoshua11@gmail.com
+              </a>
+              <a href="tel:+2349037498695" className="block hover:text-[#a6d366] transition-colors">
+                +234 903 749 8695
+              </a>
+              <p className="text-gray-500">Lagos, Nigeria · Open to remote</p>
+            </div>
+            <div className="flex items-center gap-3 mt-6">
+              {socials.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  aria-label={label}
+                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-[#a6d366] hover:border-[#a6d366] hover:text-white transition-colors"
+                >
+                  <Icon />
+                </a>
+              ))}
             </div>
           </div>
-        </footer>
-      </section>
+        </div>
 
-      <div className="bg-[#83b541] py-4 flex items-center justify-center">
-        <p className="text-center text-sm text-white">
-          &copy; 2026 Joshua Olagunju. All rights reserved.
-        </p>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-6 text-xs text-gray-500">
+          <p>© 2026 Joshua Olagunju. All rights reserved.</p>
+          <p>Designed and built with care.</p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 }
