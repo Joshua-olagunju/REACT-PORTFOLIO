@@ -2,7 +2,8 @@ import { Button } from "../components/button";
 import { useState, useEffect } from "react";
 import { IoChevronForward } from "react-icons/io5";
 
-const ROLES = ["Frontend Developer", "UI / UX Designer"];
+const ROLES = ["Front-End Lead", "React & Next.js Developer", "Product-Focused Builder"];
+const RESUME_URL = "https://drive.google.com/file/d/14chbglSIXJiTZ0Tl-FDgwaa3xGLKTO35/view?usp=sharing";
 
 // ==================================
 // Hero Component
@@ -25,11 +26,11 @@ export function Hero() {
   }, []);
 
   return (
-    <section id="home" className="pt-40 pb-20 px-3">
+    <section id="home" className="pt-24 md:pt-36 pb-16 md:pb-20 px-3">
       <div className="flex flex-col items-center justify-center text-center gap-2">
         <h2 className="text-5xl font-semibold mb-2 max-w-3xl">
-          Where <span className="text-[#83b541]">Code</span> Meets{" "}
-          <span className="text-[#83b541]">Design.</span>
+          Building thoughtful <span className="text-[#83b541]">digital</span>{" "}
+          <span className="text-[#83b541]">products.</span>
         </h2>
 
         <p
@@ -42,8 +43,9 @@ export function Hero() {
         </p>
 
         <p className="text-md max-w-2xl text-gray-600 leading-loose">
-          I design and build clean, responsive web interfaces with a strong
-          focus on usability, performance, and real-world user experience.
+          I lead front-end development for responsive, accessible React and
+          Next.js products - translating designs into fast interfaces that work
+          beautifully for real people.
         </p>
       </div>
 
@@ -54,7 +56,7 @@ export function Hero() {
           size="small"
           outline={true}
           outlineBlack="black"
-          href="https://drive.google.com/file/d/1xmDOcGymJqc8sD0MwYc2BbRLIdZ6iHNn/view?usp=sharing"
+          href={RESUME_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="px-10 py-3"

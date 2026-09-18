@@ -7,27 +7,27 @@ const faqs = [
   {
     question: "What kind of projects do you work on?",
     answer:
-      "I work on a wide range of projects including portfolios, landing pages, e-commerce websites for all kinds of businesses, web applications, and blogs.",
+      "I work on product interfaces, finance and business dashboards, corporate sites, and responsive web applications - from design handoff through deployment.",
   },
   {
     question: "How long does a project usually take?",
     answer:
-      "Project timelines depend on the scope and complexity, but most small to medium projects are completed within a few weeks.",
+      "It depends on the scope. I plan milestones early, communicate clearly, and work in focused iterations so there is steady progress throughout the project.",
   },
   {
     question: "What information do you need to get started?",
     answer:
-      "I usually need a clear idea of your goals, target audience, preferred features, and any designs or references you already have.",
+      "A clear goal, target users, required features, and any existing brand assets, designs, or technical constraints are a great starting point.",
   },
   {
     question: "Can you work with existing designs or products?",
     answer:
-      "Yes, I can improve, redesign, or extend existing websites or applications while maintaining consistency with your brand.",
+      "Yes. I can extend an existing product, improve a design system, or turn Figma screens into consistent production-ready interfaces.",
   },
   {
     question: "Do you work with modern frameworks and tools?",
     answer:
-      "Yes, I work with modern technologies such as React, Next.js, TypeScript, and other tools needed to build fast and scalable web applications.",
+      "Yes. My core stack is React, Next.js, TypeScript, Tailwind CSS, and REST API integration, with accessibility and responsive design built into the process.",
   },
 ];
 

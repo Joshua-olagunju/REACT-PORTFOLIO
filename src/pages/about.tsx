@@ -2,6 +2,8 @@ import { Button } from "../components/button";
 import { CiStar } from "react-icons/ci";
 import { FaRegFileAlt } from "react-icons/fa";
 
+const RESUME_URL = "https://drive.google.com/file/d/14chbglSIXJiTZ0Tl-FDgwaa3xGLKTO35/view?usp=sharing";
+
 // ==================================
 // About Component
 // ==================================
@@ -25,25 +27,32 @@ export function About() {
         {/* Text */}
         <div className="flex flex-col gap-2 md:w-1/2">
           <h3 className="text-2xl font-semibold text-center md:text-left">
-            GET TO KNOW MORE ABOUT ME
+            I BUILD WITH PRODUCT IN MIND
           </h3>
 
           <div className="flex flex-col gap-6 items-start mt-4">
             <p className="text-sm text-gray-600 leading-loose">
-              I'm a passionate Frontend Developer and UI/UX Designer who builds
-              modern, responsive websites and applications using React, Next.js,
-              TypeScript, and Tailwind CSS. I enjoy turning complex ideas into
-              intuitive, visually appealing interfaces, with my core tools and
-              skills highlighted through the icons below.
+              I am a Front-End Lead based in Lagos, Nigeria, open to remote
+              product-focused roles. For over three years, I have built React
+              and Next.js applications that balance business goals with clear,
+              reliable user experiences.
             </p>
 
             <p className="text-sm text-gray-600 leading-loose">
-              Beyond development, I'm driven by continuous learning and creative
-              problem-solving. I enjoy refining user experiences, experimenting
-              with new approaches, and working closely with designers and
-              developers to create products that are both functional and
-              impactful.
+              My work spans component architecture, API integration, responsive
+              implementation, and design systems. I enjoy collaborating with
+              designers, QA, and engineers, mentoring front-end developers, and
+              making complex workflows feel simple to use.
             </p>
+
+            <div className="grid grid-cols-3 gap-3 w-full">
+              {[['3+', 'years building'], ['5+', 'developers mentored'], ['30%', 'fewer UI issues']].map(([value, label]) => (
+                <div key={label} className="border-l-2 border-[#83b541] pl-3">
+                  <p className="text-lg font-semibold">{value}</p>
+                  <p className="text-xs text-gray-500">{label}</p>
+                </div>
+              ))}
+            </div>
 
             <Button
               text="RESUME"
@@ -51,7 +60,7 @@ export function About() {
               className="w-[180px] py-3"
               buttonBackground="green"
               icon={<FaRegFileAlt />}
-              href="https://drive.google.com/file/d/1xmDOcGymJqc8sD0MwYc2BbRLIdZ6iHNn/view?usp=sharing"
+              href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
             />

@@ -1,13 +1,14 @@
 import { Button } from "../components/button";
 import { MdOutlineMenu, MdCallSplit, MdCall } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
-import { IoChevronDown } from "react-icons/io5";
 import { useState } from "react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#skills", label: "Skills", hasCaret: true },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Header() {
@@ -62,13 +63,13 @@ export function Header() {
                 <MdCall size={20} /> +234 903 749 8695
               </a>
             </li>
-            {navLinks.map(({ href, label, hasCaret }) => (
+            {navLinks.map(({ href, label }) => (
               <li key={href}>
                 <a
                   href={href}
                   className="hover:text-[#83b541] transition flex items-center gap-1"
                 >
-                  {label} {hasCaret && <IoChevronDown size={14} />}
+                  {label}
                 </a>
               </li>
             ))}

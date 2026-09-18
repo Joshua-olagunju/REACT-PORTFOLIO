@@ -6,7 +6,7 @@ const contactMethods = [
   {
     icon: MdEmail,
     label: "Email",
-    sublabel: "I am happy to help.",
+    sublabel: "Best for project details and opportunities.",
     href: "mailto:olagunjujoshua11@gmail.com",
     display: "olagunjujoshua11@gmail.com",
     external: false,
@@ -14,7 +14,7 @@ const contactMethods = [
   {
     icon: MdOutlineWhatsapp,
     label: "WhatsApp",
-    sublabel: "Message me anytime.",
+    sublabel: "A quick way to start a conversation.",
     href: "https://wa.me/2349037498695",
     display: "+234 903 749 8695",
     external: true,
@@ -22,7 +22,7 @@ const contactMethods = [
   {
     icon: GrLinkedin,
     label: "LinkedIn",
-    sublabel: "Let's connect professionally.",
+    sublabel: "Follow my professional journey.",
     href: "https://www.linkedin.com/in/joshuaolagunju/",
     display: "View profile",
     external: true,
@@ -34,12 +34,12 @@ const contactMethods = [
 // ==================================
 export function Contact() {
   return (
-    <section id="contact" className="px-3 py-10 max-w-2xl mx-auto scroll-mt-[150px]">
+    <section id="contact" className="px-3 py-16 max-w-2xl mx-auto scroll-mt-[150px]">
       <h3 className="text-start md:text-center text-3xl font-medium mb-0">
-        Get in touch with me
+        Let&apos;s build something useful
       </h3>
       <p className="text-sm text-gray-500 text-start md:text-center">
-        I will be glad to hear from you
+        Open to remote roles, freelance projects, and product collaborations.
       </p>
 
       <div className="flex flex-col gap-3 mt-10">

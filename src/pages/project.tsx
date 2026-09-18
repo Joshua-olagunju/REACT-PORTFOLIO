@@ -1,6 +1,6 @@
-import { Button } from "../components/button";
 import { CgMediaLive } from "react-icons/cg";
 import { CiStar } from "react-icons/ci";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
   {
@@ -8,7 +8,7 @@ const projects = [
     alt: "Fintech Website",
     title: "Kings Guard Website",
     description:
-      "A responsive corporate website for a security company, built with React, Tailwind CSS, and TypeScript, featuring a clean design and intuitive navigation.",
+      "A responsive corporate website that makes services, trust signals, and contact paths easy to find across every screen size.",
     stack: ["React", "TypeScript", "Node.js", "Tailwind CSS"],
     liveUrl: "https://kings-guard-gamma.vercel.app/",
   },
@@ -17,18 +17,18 @@ const projects = [
     alt: "Music Institute Website",
     title: "Music Institute Website",
     description:
-      "A modern website for a music training institute, showcasing courses, trainers, and events with a clean and responsive design.",
+      "A polished course and events experience designed to help prospective students explore the institute with confidence.",
     stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://praise-g-music.vercel.app/",
   },
   {
     image: "/Screenshot 2026-05-29 125411.png",
-    alt: "DriftTech Website",
-    title: "Responsive Corporate Website",
+    alt: "Sodatim website work showcase",
+    title: "Sodatim Website",
     description:
-      "A modern corporate fintech website focused on clean UI, smooth animations, and clear presentation of digital solutions.",
+      "A modern digital-services site with a clear visual system, purposeful motion, and an easy-to-scan content hierarchy.",
     stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://drift-tech-web.vercel.app/",
+    liveUrl: "https://sodatim.com/",
   },
 ];
 
@@ -50,14 +50,17 @@ function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <div className="p-2 border border-gray-200 h-full flex flex-col">
-      <div className="overflow-hidden aspect-video">
-        <img src={image} alt={alt} className="w-full h-full object-cover" />
+    <article className="group bg-white border border-gray-200 rounded-2xl overflow-hidden h-full flex flex-col shadow-sm hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+      <div className="overflow-hidden aspect-video bg-gray-100">
+        <img src={image} alt={alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
       </div>
 
-      <div className="flex flex-col gap-2 p-2 mt-5 flex-1">
-        <p className="font-bold text-lg">{title}</p>
-        <p className="text-xs text-gray-500 leading-loose">{description}</p>
+      <div className="flex flex-col gap-4 p-6 flex-1">
+        <div>
+          <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#83b541] mb-2">Selected work</p>
+          <h4 className="font-semibold text-xl">{title}</h4>
+        </div>
+        <p className="text-sm text-gray-500 leading-6">{description}</p>
 
         <div className="flex flex-wrap gap-2 mt-1">
           {stack.map((tech) => (
@@ -70,18 +73,11 @@ function ProjectCard({
           ))}
         </div>
 
-        <Button
-          icon={<CgMediaLive />}
-          text="View Live"
-          buttonBackground="green"
-          size="small"
-          href={liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-auto"
-        />
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-[#669530] hover:gap-3 transition-all">
+          <CgMediaLive /> View live site <FiArrowUpRight />
+        </a>
       </div>
-    </div>
+    </article>
   );
 }
 
@@ -90,7 +86,7 @@ function ProjectCard({
 // ==================================
 export function Project() {
   return (
-    <section id="projects" className="px-3 scroll-mt-[150px]">
+    <section id="projects" className="px-3 py-10 scroll-mt-[150px]">
       {/* Heading */}
       <div className="mb-3 text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto border-[#4682A9]/20">
         <CiStar size={20} />
@@ -99,8 +95,9 @@ export function Project() {
 
       <div className="flex flex-col items-center gap-2 justify-center max-w-2xl mx-auto text-center mt-2">
         <h3 className="text-2xl font-semibold text-center">
-          HIGHLIGHTS OF MY WORKS
+          WORK BUILT TO BE USED
         </h3>
+        <p className="text-sm text-gray-500">A few recent interfaces shaped around clarity, responsiveness, and real user needs.</p>
       </div>
 
       {/* Grid */}

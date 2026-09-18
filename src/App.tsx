@@ -1,6 +1,7 @@
 import { Header } from "./pages/header";
 import { Hero } from "./pages/hero";
 import { About } from "./pages/about";
+import { Experience } from "./pages/experience";
 import { Skill } from "./pages/skill";
 import { Project } from "./pages/project";
 import { ChatBot } from "./pages/chatBot";
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Hero />
       <Project />
+      <Experience />
       <About />
       <ChatBot />
       <Skill />

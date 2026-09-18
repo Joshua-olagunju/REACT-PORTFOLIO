@@ -4,6 +4,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiBootstrap,
+  SiJavascript,
   SiGit,
   SiGithub,
   SiVercel,
@@ -11,6 +12,8 @@ import {
   SiFigma,
   SiCanva,
   SiAdobephotoshop,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si";
 import { CiStar } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
@@ -24,14 +27,17 @@ const skillGroups = [
       { name: "React", icon: SiReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "TypeScript", icon: SiTypescript },
+      { name: "JavaScript", icon: SiJavascript },
       { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "Bootstrap", icon: SiBootstrap },
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: SiCss3 },
     ],
   },
   {
-    title: "Tools & workflow",
+    title: "Delivery & quality",
     skills: [
-      { name: "Git / GitHub", icon: SiGit },
+      { name: "Git", icon: SiGit },
       { name: "GitHub", icon: SiGithub },
       { name: "VS Code", icon: VscVscode },
       { name: "Vercel", icon: SiVercel },
@@ -39,12 +45,12 @@ const skillGroups = [
     ],
   },
   {
-    title: "UI / UX",
+    title: "Design & product",
     skills: [
       { name: "Figma", icon: SiFigma },
-      { name: "Canva", icon: SiCanva },
-      { name: "Adobe", icon: SiAdobephotoshop },
-      { name: "Prototyping", icon: TbLayoutGrid },
+      { name: "Adobe XD", icon: SiAdobephotoshop },
+      { name: "Design systems", icon: TbLayoutGrid },
+      { name: "Wireframing", icon: SiCanva },
     ],
   },
 ];
