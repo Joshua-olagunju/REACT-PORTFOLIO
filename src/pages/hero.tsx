@@ -28,7 +28,7 @@ export function Hero() {
   return (
     <section id="home" className="pt-24 md:pt-36 pb-16 md:pb-20 px-3">
       <div className="flex flex-col items-center justify-center text-center gap-2">
-        <h2 className="text-5xl font-semibold mb-2 max-w-3xl">
+        <h2 className="text-4xl md:text-[2.75rem] font-semibold mb-2 max-w-3xl">
           Building Thoughtful <span className="text-[#83b541]">Digital</span>{" "}
           <span className="text-[#83b541]">Products.</span>
         </h2>
