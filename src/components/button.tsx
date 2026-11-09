@@ -37,23 +37,23 @@ export function Button({
     large: "text-lg px-8 py-6",
   };
   const backgroundClasses = {
-    blue: "!bg-[#275b8f] !text-[#ffffff]",
-    blueSecondary: "!bg-[#275b8f] !text-[#275b8f]",
+    blue: "!bg-[#2E5F9E] !text-[#ffffff]",
+    blueSecondary: "!bg-[#2E5F9E] !text-[#2E5F9E]",
     black: "!bg-black !text-[#ffffff]",
-    green: "!bg-[#83b541] !text-white",
+    green: "!bg-[#4F86C6] !text-white",
   };
   const outlineClasses = {
-    blue: "!border-1 !border-[#ffffff] !text-[#275b8f] !bg-transparent",
+    blue: "!border-1 !border-[#ffffff] !text-[#2E5F9E] !bg-transparent",
     blueSecondary:
-      "!border-1 !border-[#275b8f] !text-[#275b8f] !bg-transparent",
+      "!border-1 !border-[#2E5F9E] !text-[#2E5F9E] !bg-transparent",
     black: "!border-1 !border-black !text-[black] !bg-transparent",
-    green: "!border-1 !border-[#83b541] !text-[#83b541] !bg-transparent",
+    green: "!border-1 !border-[#4F86C6] !text-[#4F86C6] !bg-transparent",
   };
 
   // ==================================
   // Button Size Classes
   // ==================================
-  const classNames = `bg-[#eafab4] font-[500]  transition-all cursor-pointer text-black rounded-full ${
+  const classNames = `bg-[#EAF2FB] font-[500]  transition-all cursor-pointer text-black rounded-full ${
     sizeClasses[size || "medium"]
   }  ${backgroundClasses[buttonBackground || "blue"]} ${
     outline ? outlineClasses[outlineBlack || "blue"] : ""

@@ -10,7 +10,7 @@ const RESUME_URL = "https://drive.google.com/file/d/1WqJDj3-HU-aQKQDb9JZZkoqGfm9
 export function About() {
   return (
     <section id="about" className="py-20 px-3 mt-10 scroll-mt-[150px]">
-      <div className="mb-3 text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto border-[#4682A9]/20">
+      <div className="mb-3 text-xs text-[#4F86C6] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto border-[#4682A9]/20">
         <CiStar size={20} /> About Me
       </div>
 
@@ -18,7 +18,7 @@ export function About() {
         {/* Image */}
         <div className="w-full max-w-sm md:w-1/2 shrink-0">
           <img
-            src="/MyAboutImage.jpeg"
+            src="/linkedin_photo_clean.png"
             alt="Joshua Olagunju working"
             className="w-full h-auto object-cover rounded-lg"
           />
@@ -48,7 +48,7 @@ export function About() {
 
             <div className="grid grid-cols-3 gap-3 w-full">
               {[['3+', 'years building'], ['2026', 'PrimBooks launch'], ['React', 'to Next.js']].map(([value, label]) => (
-                <div key={label} className="border-l-2 border-[#83b541] pl-3">
+                <div key={label} className="border-l-2 border-[#4F86C6] pl-3">
                   <p className="text-lg font-semibold">{value}</p>
                   <p className="text-xs text-gray-500">{label}</p>
                 </div>

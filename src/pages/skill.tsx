@@ -74,7 +74,7 @@ type Skill = { name: string; icon: React.ComponentType<{ size?: number }> };
 
 function SkillCard({ title, description, skills }: { title: string; description: string; skills: Skill[] }) {
   return (
-    <article className="border border-gray-200 border-t-2 border-t-[#83b541] rounded-sm p-6 flex flex-col gap-4 w-full h-full bg-white">
+    <article className="border border-gray-200 border-t-2 border-t-[#4F86C6] rounded-sm p-6 flex flex-col gap-4 w-full h-full bg-white">
       <div className="text-center">
         <h4 className="font-semibold text-lg">{title}</h4>
         <p className="text-xs text-gray-500 leading-5 mt-2 max-w-[16rem] mx-auto">{description}</p>
@@ -83,7 +83,7 @@ function SkillCard({ title, description, skills }: { title: string; description:
         {skills.map(({ name, icon: Icon }) => (
           <span
             key={name}
-            className="flex items-center gap-2 text-xs px-3 py-2 rounded-full bg-gray-50 border border-gray-200 text-gray-700 hover:border-[#83b541]/60 hover:text-[#527b23] transition-colors"
+            className="flex items-center gap-2 text-xs px-3 py-2 rounded-full bg-gray-50 border border-gray-200 text-gray-700 hover:border-[#4F86C6]/60 hover:text-[#234A7A] transition-colors"
           >
             <Icon size={14} />
             {name}
@@ -100,7 +100,7 @@ function SkillCard({ title, description, skills }: { title: string; description:
 export function Skill() {
   return (
     <section id="skills" className="max-w-6xl mx-auto px-3 py-16 scroll-mt-[150px]">
-      <div className="text-xs text-[#83b541] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
+      <div className="text-xs text-[#4F86C6] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
         <CiStar size={20} />
         Skills
       </div>

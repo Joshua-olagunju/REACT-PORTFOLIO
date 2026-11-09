@@ -89,28 +89,28 @@ function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <article className="group bg-white border border-gray-200 rounded-sm overflow-hidden h-full flex flex-col hover:border-[#83b541]/60 transition-colors duration-300">
+    <article className="group bg-white border border-gray-200 rounded-sm overflow-hidden h-full flex flex-col hover:border-[#4F86C6]/60 transition-colors duration-300">
       <div className="overflow-hidden aspect-video bg-gray-100">
         <img src={image} alt={alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
       </div>
 
       <div className="flex flex-col gap-4 p-6 flex-1">
         <div>
-          <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#83b541] mb-2">Selected work</p>
+          <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#4F86C6] mb-2">Selected work</p>
           <h4 className="font-semibold text-xl">{title}</h4>
         </div>
         <p className="text-sm text-gray-500 leading-6">{description}</p>
 
         <div className="border-y border-gray-100 py-3 space-y-2">
-          <p className="text-xs font-medium text-gray-700"><span className="text-[#669530]">Role:</span> {role}</p>
+          <p className="text-xs font-medium text-gray-700"><span className="text-[#2E5F9E]">Role:</span> {role}</p>
           <ul className="space-y-1">
             {contributions.map((contribution) => (
               <li key={contribution} className="text-xs text-gray-500 leading-5 flex gap-2">
-                <span className="text-[#83b541]" aria-hidden="true">•</span>{contribution}
+                <span className="text-[#4F86C6]" aria-hidden="true">•</span>{contribution}
               </li>
             ))}
           </ul>
-          <p className="text-xs text-gray-600 leading-5"><span className="font-medium text-[#669530]">Outcome:</span> {outcome}</p>
+          <p className="text-xs text-gray-600 leading-5"><span className="font-medium text-[#2E5F9E]">Outcome:</span> {outcome}</p>
         </div>
 
         <div className="flex flex-wrap gap-2 mt-1">
@@ -124,7 +124,7 @@ function ProjectCard({
           ))}
         </div>
 
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-[#669530] hover:gap-3 transition-all">
+        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold text-[#2E5F9E] hover:gap-3 transition-all">
           <CgMediaLive /> View live site <FiArrowUpRight />
         </a>
       </div>
@@ -139,7 +139,7 @@ export function Project() {
   return (
     <section id="projects" className="px-3 py-10 scroll-mt-[150px]">
       {/* Heading */}
-      <div className="mb-3 text-xs text-[#83b541] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto border-[#4682A9]/20">
+      <div className="mb-3 text-xs text-[#4F86C6] bg-white/10 shadow flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto border-[#4682A9]/20">
         <CiStar size={20} />
         My Works
       </div>

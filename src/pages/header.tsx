@@ -23,7 +23,7 @@ export function Header() {
           <img
             src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
             alt="Joshua Olagunju logo"
-            className="w-20 h-auto object-contain"
+            className="w-20 h-auto object-contain hue-rotate-[125deg] saturate-[.8]"
           />
           <Button
             text="Let's Connect"
@@ -40,7 +40,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <div className="rounded-full h-12 w-12 overflow-hidden shrink-0">
               <img
-                src="/MyAboutImage.jpeg"
+                src="/linkedin_photo_clean.png"
                 alt="Joshua Olagunju"
                 className="w-full h-full object-cover"
               />
@@ -60,7 +60,7 @@ export function Header() {
             <li>
               <a
                 href="tel:+2349037498695"
-                className="flex items-center gap-1 text-[#83b541] hover:underline"
+                className="flex items-center gap-1 text-[#4F86C6] hover:underline"
               >
                 <MdCall size={20} /> +234 903 749 8695
               </a>
@@ -69,7 +69,7 @@ export function Header() {
               <li key={href}>
                 <a
                   href={href}
-                  className="hover:text-[#83b541] transition flex items-center gap-1"
+                  className="hover:text-[#4F86C6] transition flex items-center gap-1"
                 >
                   {label}
                 </a>
@@ -91,7 +91,7 @@ export function Header() {
           <li>
             <a
               href="tel:+2349037498695"
-              className="flex items-center gap-1 text-[#83b541]"
+              className="flex items-center gap-1 text-[#4F86C6]"
             >
               <MdCall size={18} /> +234 903 749 8695
             </a>

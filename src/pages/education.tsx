@@ -21,7 +21,7 @@ const education = [
 export function Education() {
   return (
     <section id="education" className="max-w-6xl mx-auto px-3 pb-16 scroll-mt-[150px]">
-      <div className="text-xs text-[#83b541] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
+      <div className="text-xs text-[#4F86C6] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
         <CiStar size={20} /> Education
       </div>
       <div className="text-center max-w-2xl mx-auto mb-8">
@@ -30,16 +30,16 @@ export function Education() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {education.map((item) => (
-          <article key={item.degree} className="bg-white border border-gray-200 border-t-2 border-t-[#83b541] rounded-sm p-6">
+          <article key={item.degree} className="bg-white border border-gray-200 border-t-2 border-t-[#4F86C6] rounded-sm p-6">
             <div className="flex items-start justify-between gap-4">
-              <div className="w-10 h-10 bg-[#83b541]/10 text-[#669530] flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-[#4F86C6]/10 text-[#2E5F9E] flex items-center justify-center shrink-0">
                 <FaGraduationCap />
               </div>
-              <span className="text-xs text-[#527b23] bg-[#83b541]/10 px-3 py-1 rounded-full">{item.status}</span>
+              <span className="text-xs text-[#234A7A] bg-[#4F86C6]/10 px-3 py-1 rounded-full">{item.status}</span>
             </div>
             <h4 className="text-lg font-semibold mt-5">{item.degree}</h4>
             <p className="text-sm font-medium text-gray-600 mt-1">{item.school}</p>
-            <p className="text-xs font-medium uppercase tracking-wide text-[#669530] mt-4">{item.period}</p>
+            <p className="text-xs font-medium uppercase tracking-wide text-[#2E5F9E] mt-4">{item.period}</p>
             <p className="text-sm text-gray-500 leading-6 mt-3">{item.detail}</p>
           </article>
         ))}

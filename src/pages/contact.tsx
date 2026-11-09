@@ -57,11 +57,11 @@ export function Contact() {
             key={label}
             href={href}
             {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 border border-gray-200 rounded-md p-4 hover:border-[#83b541] transition-colors"
+            className="group flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 border border-gray-200 rounded-md p-4 hover:border-[#4F86C6] transition-colors"
           >
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 shrink-0 bg-[#83b541]/10 rounded-full flex items-center justify-center">
-                <Icon className="text-2xl text-[#83b541]" />
+              <div className="w-12 h-12 shrink-0 bg-[#4F86C6]/10 rounded-full flex items-center justify-center">
+                <Icon className="text-2xl text-[#4F86C6]" />
               </div>
 
               <div className="flex-1 sm:flex-none text-start">
@@ -71,10 +71,10 @@ export function Contact() {
             </div>
 
             <div className="flex items-center justify-between sm:ml-auto sm:justify-end gap-2 pl-16 sm:pl-0">
-              <p className="text-sm text-[#83b541] truncate max-w-[220px] sm:max-w-none">
+              <p className="text-sm text-[#4F86C6] truncate max-w-[220px] sm:max-w-none">
                 {display}
               </p>
-              <IoChevronForward className="shrink-0 text-gray-400 group-hover:text-[#83b541] group-hover:translate-x-1 transition-all" />
+              <IoChevronForward className="shrink-0 text-gray-400 group-hover:text-[#4F86C6] group-hover:translate-x-1 transition-all" />
             </div>
           </a>
         ))}

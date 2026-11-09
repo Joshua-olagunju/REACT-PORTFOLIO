@@ -28,7 +28,7 @@ export function Footer() {
             <img
               src="/Fashion_Brand_Art_Design_Logo_6_-removebg-preview.png"
               alt="Joshua Olagunju logo"
-              className="w-28 h-auto object-contain mb-6"
+              className="w-28 h-auto object-contain mb-6 hue-rotate-[125deg] saturate-[.8]"
             />
             <h3 className="text-2xl md:text-3xl font-semibold text-white max-w-md leading-tight">
               Let&apos;s make your next digital product feel effortless.
@@ -38,19 +38,19 @@ export function Footer() {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-[#a6d366] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-[#9CC4F5] hover:text-white transition-colors"
             >
               Start a conversation <FiArrowUpRight />
             </a>
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.18em] text-[#a6d366] mb-5">Explore</p>
+            <p className="text-xs uppercase tracking-[0.18em] text-[#9CC4F5] mb-5">Explore</p>
             <nav aria-label="Footer navigation">
               <ul className="space-y-3 text-sm">
                 {quickLinks.map(({ href, label }) => (
                   <li key={href}>
-                    <a href={href} className="hover:text-[#a6d366] transition-colors">{label}</a>
+                    <a href={href} className="hover:text-[#9CC4F5] transition-colors">{label}</a>
                   </li>
                 ))}
               </ul>
@@ -58,12 +58,12 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.18em] text-[#a6d366] mb-5">Get in touch</p>
+            <p className="text-xs uppercase tracking-[0.18em] text-[#9CC4F5] mb-5">Get in touch</p>
             <div className="space-y-3 text-sm">
-              <a href="mailto:olagunjujoshua11@gmail.com" className="block hover:text-[#a6d366] transition-colors break-all">
+              <a href="mailto:olagunjujoshua11@gmail.com" className="block hover:text-[#9CC4F5] transition-colors break-all">
                 olagunjujoshua11@gmail.com
               </a>
-              <a href="tel:+2349037498695" className="block hover:text-[#a6d366] transition-colors">
+              <a href="tel:+2349037498695" className="block hover:text-[#9CC4F5] transition-colors">
                 +234 903 749 8695
               </a>
               <p className="text-gray-500">Lagos, Nigeria · Open to remote</p>
@@ -76,7 +76,7 @@ export function Footer() {
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                   aria-label={label}
-                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-[#a6d366] hover:border-[#a6d366] hover:text-white transition-colors"
+                  className="w-9 h-9 border border-white/15 flex items-center justify-center text-[#9CC4F5] hover:border-[#9CC4F5] hover:text-white transition-colors"
                 >
                   <Icon />
                 </a>

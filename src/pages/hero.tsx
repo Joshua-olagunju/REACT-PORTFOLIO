@@ -29,8 +29,8 @@ export function Hero() {
     <section id="home" className="pt-24 md:pt-36 pb-16 md:pb-20 px-3">
       <div className="flex flex-col items-center justify-center text-center gap-2">
         <h2 className="text-4xl md:text-[2.75rem] font-semibold mb-2 max-w-3xl">
-          Building Thoughtful <span className="text-[#83b541]">Digital</span>{" "}
-          <span className="text-[#83b541]">Products.</span>
+          Building Thoughtful <span className="text-[#4F86C6]">Digital</span>{" "}
+          <span className="text-[#4F86C6]">Products.</span>
         </h2>
 
         <p
@@ -47,7 +47,7 @@ export function Hero() {
           into accessible, maintainable interfaces with reusable components,
           thoughtful interactions, and a clear user experience.
         </p>
-        <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#669530] mt-2">
+        <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#2E5F9E] mt-2">
           Open to remote Frontend Engineer roles
         </p>
       </div>

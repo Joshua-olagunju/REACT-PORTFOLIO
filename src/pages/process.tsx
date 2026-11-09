@@ -31,7 +31,7 @@ const steps = [
 export function Process() {
   return (
     <section id="process" className="max-w-6xl mx-auto px-3 py-16 scroll-mt-[150px]">
-      <div className="text-xs text-[#83b541] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
+      <div className="text-xs text-[#4F86C6] mb-4 bg-white border border-gray-200 flex items-center justify-center py-2 px-4 gap-1 rounded-full w-fit mx-auto">
         <CiStar size={20} /> How I Work
       </div>
       <div className="text-center max-w-2xl mx-auto mb-8">
@@ -40,9 +40,9 @@ export function Process() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {steps.map(({ icon: Icon, number, title, text }) => (
-          <article key={number} className="bg-white border border-gray-200 border-t-2 border-t-[#83b541] rounded-sm p-5">
+          <article key={number} className="bg-white border border-gray-200 border-t-2 border-t-[#4F86C6] rounded-sm p-5">
             <div className="flex items-start justify-between">
-              <span className="w-10 h-10 bg-[#83b541]/10 text-[#669530] flex items-center justify-center"><Icon /></span>
+              <span className="w-10 h-10 bg-[#4F86C6]/10 text-[#2E5F9E] flex items-center justify-center"><Icon /></span>
               <span className="text-xs font-medium text-gray-400">{number}</span>
             </div>
             <h4 className="font-semibold mt-5">{title}</h4>
