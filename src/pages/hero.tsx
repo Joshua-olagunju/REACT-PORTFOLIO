@@ -47,6 +47,9 @@ export function Hero() {
           into accessible, maintainable interfaces with reusable components,
           thoughtful interactions, and a clear user experience.
         </p>
+        <p className="text-xs font-medium uppercase tracking-[0.14em] text-[#669530] mt-2">
+          Open to remote Frontend Engineer roles
+        </p>
       </div>
 
       <div className="flex gap-4 mt-5 items-center justify-center">
