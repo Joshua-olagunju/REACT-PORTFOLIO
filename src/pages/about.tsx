@@ -2,7 +2,7 @@ import { Button } from "../components/button";
 import { CiStar } from "react-icons/ci";
 import { FaRegFileAlt } from "react-icons/fa";
 
-const RESUME_URL = "https://drive.google.com/file/d/14chbglSIXJiTZ0Tl-FDgwaa3xGLKTO35/view?usp=sharing";
+const RESUME_URL = "https://drive.google.com/file/d/1WqJDj3-HU-aQKQDb9JZZkoqGfm928oWy/view?usp=sharing";
 
 // ==================================
 // About Component
@@ -27,26 +27,27 @@ export function About() {
         {/* Text */}
         <div className="flex flex-col gap-2 md:w-1/2">
           <h3 className="text-2xl font-semibold text-center md:text-left">
-            I BUILD WITH PRODUCT IN MIND
+            I BUILD RELIABLE DIGITAL PRODUCTS
           </h3>
 
           <div className="flex flex-col gap-6 items-start mt-4">
             <p className="text-sm text-gray-600 leading-loose">
-              I am a Front-End Lead based in Lagos, Nigeria, open to remote
-              product-focused roles. For over three years, I have built React
-              and Next.js applications that balance business goals with clear,
-              reliable user experiences.
+              I am a Frontend Engineer based in Lagos, Nigeria, with over three
+              years of experience building responsive applications with React,
+              Next.js, JavaScript, and TypeScript. I focus on dependable digital
+              products that make complex work feel clear and usable.
             </p>
 
             <p className="text-sm text-gray-600 leading-loose">
-              My work spans component architecture, API integration, responsive
-              implementation, and design systems. I enjoy collaborating with
-              designers, QA, and engineers, mentoring front-end developers, and
-              making complex workflows feel simple to use.
+              I translate product and UI/UX designs into accessible, maintainable
+              interfaces; build reusable UI components; integrate REST APIs; and
+              collaborate closely with designers, backend engineers, QA, and
+              product teams. I also contributed to the public launch of the
+              PrimBooks finance and accounting platform.
             </p>
 
             <div className="grid grid-cols-3 gap-3 w-full">
-              {[['3+', 'years building'], ['5+', 'developers mentored'], ['30%', 'fewer UI issues']].map(([value, label]) => (
+              {[['3+', 'years building'], ['2026', 'PrimBooks launch'], ['React', 'to Next.js']].map(([value, label]) => (
                 <div key={label} className="border-l-2 border-[#83b541] pl-3">
                   <p className="text-lg font-semibold">{value}</p>
                   <p className="text-xs text-gray-500">{label}</p>

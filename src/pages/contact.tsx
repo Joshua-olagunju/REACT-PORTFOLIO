@@ -1,5 +1,6 @@
 import { MdOutlineWhatsapp, MdEmail } from "react-icons/md";
 import { GrLinkedin } from "react-icons/gr";
+import { FaXTwitter } from "react-icons/fa6";
 import { IoChevronForward } from "react-icons/io5";
 
 const contactMethods = [
@@ -25,6 +26,14 @@ const contactMethods = [
     sublabel: "Follow my professional journey.",
     href: "https://www.linkedin.com/in/joshuaolagunju/",
     display: "View profile",
+    external: true,
+  },
+  {
+    icon: FaXTwitter,
+    label: "X (Twitter)",
+    sublabel: "See what I am building and sharing.",
+    href: "https://x.com/sojiolagunju37?s=11",
+    display: "@sojiolagunju37",
     external: true,
   },
 ];

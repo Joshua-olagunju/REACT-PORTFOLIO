@@ -1,11 +1,13 @@
 import { GrLinkedin } from "react-icons/gr";
 import { MdOutlineWhatsapp, MdEmail } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 const quickLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#education", label: "Education" },
   { href: "#projects", label: "Projects" },
 ];
 
@@ -13,6 +15,7 @@ const socials = [
   { icon: GrLinkedin, href: "https://www.linkedin.com/in/joshuaolagunju/", label: "LinkedIn" },
   { icon: MdOutlineWhatsapp, href: "https://wa.me/2349037498695", label: "WhatsApp" },
   { icon: MdEmail, href: "mailto:olagunjujoshua11@gmail.com", label: "Email" },
+  { icon: FaXTwitter, href: "https://x.com/sojiolagunju37?s=11", label: "X (Twitter)" },
 ];
 
 export function Footer() {

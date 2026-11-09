@@ -3,24 +3,24 @@ import { CiStar } from "react-icons/ci";
 const roles = [
   {
     period: "May 2025 - Present",
-    role: "Front-End Lead",
-    company: "Abvakon Mobile Solutions Ltd.",
-    summary: "Leading the front end of an enterprise finance and accounting platform, from component architecture to live dashboard integration.",
-    highlights: ["Next.js + TypeScript component library", "Mentored 5+ front-end developers", "Reduced front-end issues by 30%"],
+    role: "Frontend Developer",
+    company: "Abvakon Mobile Solutions Ltd. (PrimBooks)",
+    summary: "Contributing to the production frontend of PrimBooks, a finance and accounting SaaS platform for business users - from responsive product screens to release-ready features.",
+    highlights: ["React / Next.js + TypeScript", "REST API and server-state integration", "Public launch: November 2026"],
   },
   {
     period: "Jun 2025 - Oct 2025",
-    role: "Web Content Uploader Intern / Squad Leader",
+    role: "Web Content Uploader / Squad Leader",
     company: "GAO Tek Inc.",
-    summary: "Delivered SEO-focused, responsive, WCAG-conscious pages while reviewing contributors' work and keeping a small team moving.",
-    highlights: ["SEO-focused content delivery", "Responsive, accessible layouts", "Team quality review"],
+    summary: "Maintained website content to publishing requirements while coordinating a small contributor group and reviewing work for consistency and completeness.",
+    highlights: ["Content publishing", "Basic SEO and accessibility", "Contributor coordination"],
   },
   {
     period: "Feb 2023 - Present",
     role: "Freelance Front-End Developer",
     company: "Independent Projects",
-    summary: "Designing, building, and deploying client products end-to-end - from Figma prototypes to responsive production websites.",
-    highlights: ["React and Tailwind CSS", "Finance tracking web app", "Vercel deployments"],
+    summary: "Designing and developing responsive client and independent projects, from design references and Figma prototypes to functional web pages and deployment.",
+    highlights: ["React, Next.js and Tailwind CSS", "Figma-to-frontend delivery", "Modern web deployments"],
   },
 ];
 

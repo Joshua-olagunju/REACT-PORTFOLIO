@@ -2,8 +2,8 @@ import { Button } from "../components/button";
 import { useState, useEffect } from "react";
 import { IoChevronForward } from "react-icons/io5";
 
-const ROLES = ["Front-End Lead", "React & Next.js Developer", "Product-Focused Builder"];
-const RESUME_URL = "https://drive.google.com/file/d/14chbglSIXJiTZ0Tl-FDgwaa3xGLKTO35/view?usp=sharing";
+const ROLES = ["Frontend Engineer", "React & Next.js Developer", "Product-Focused Builder"];
+const RESUME_URL = "https://drive.google.com/file/d/1WqJDj3-HU-aQKQDb9JZZkoqGfm928oWy/view?usp=sharing";
 
 // ==================================
 // Hero Component
@@ -43,9 +43,9 @@ export function Hero() {
         </p>
 
         <p className="text-md max-w-2xl text-gray-600 leading-loose">
-          I lead front-end development for responsive, accessible React and
-          Next.js products - translating designs into fast interfaces that work
-          beautifully for real people.
+          I build reliable React and Next.js products - turning product designs
+          into accessible, maintainable interfaces with reusable components,
+          thoughtful interactions, and a clear user experience.
         </p>
       </div>
 

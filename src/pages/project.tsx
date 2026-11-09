@@ -4,6 +4,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
   {
+    image: "/Screenshot 2026-11-09 085447.png",
+    alt: "PrimBooks finance and accounting platform dashboard",
+    title: "PrimBooks Finance Platform",
+    description:
+      "Contributed to the frontend of a production finance and accounting SaaS platform. I built responsive application views, reusable UI patterns, and API-connected experiences that support invoicing, financial tracking, and reporting workflows.",
+    stack: ["React", "Next.js", "TypeScript", "REST APIs", "React Query"],
+    liveUrl: "https://app.primbooks.com/login",
+  },
+  {
     image: "/Screenshot 2026-05-29 125930.png",
     alt: "Fintech Website",
     title: "Kings Guard Website",
@@ -11,6 +20,15 @@ const projects = [
       "Built in partnership with Sodatim Technologies, where I contributed as the front-end developer. I helped turn the team’s direction into a responsive corporate website with clear service information, trust signals, and contact paths.",
     stack: ["React", "TypeScript", "Node.js", "Tailwind CSS"],
     liveUrl: "https://kings-guard-gamma.vercel.app/",
+  },
+  {
+    image: "/primbooks-portfolio.png",
+    alt: "PrimBooks landing page team and interface",
+    title: "PrimBooks Landing Page",
+    description:
+      "I translated UI designs created by fellow UI/UX designers into polished, responsive front-end screens for PrimBooks. My work focused on reusable interface components, fluid interactions, and a consistent product experience across the landing page.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
+    liveUrl: "https://primbooks-landing-page.vercel.app/",
   },
   {
     image: "/Screenshot 2026-07-26 083749.png",
@@ -29,15 +47,6 @@ const projects = [
       "A modern digital-services site with a clear visual system, purposeful motion, and an easy-to-scan content hierarchy.",
     stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     liveUrl: "https://sodatim.com/",
-  },
-  {
-    image: "/primbooks-portfolio.png",
-    alt: "Primbooks finance platform team and interface",
-    title: "PrimBooks Landing Page",
-    description:
-      "I translated UI designs created by fellow UI/UX designers into polished, responsive front-end screens for Primbooks. My work focused on building reusable interface components, fluid interactions, and a consistent finance-product experience across the site.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"],
-    liveUrl: "https://primbooks-landing-page.vercel.app/",
   },
 ];
 

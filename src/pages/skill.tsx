@@ -16,6 +16,10 @@ import {
   SiCss3,
   SiFramer,
   SiShadcnui,
+  SiReactquery,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import { CiStar } from "react-icons/ci";
 import { VscVscode } from "react-icons/vsc";
@@ -48,6 +52,7 @@ const skillGroups = [
       { name: "VS Code", icon: VscVscode },
       { name: "Vercel", icon: SiVercel },
       { name: "Netlify", icon: SiNetlify },
+      { name: "React Query", icon: SiReactquery },
     ],
   },
   {
@@ -58,6 +63,9 @@ const skillGroups = [
       { name: "Adobe XD", icon: SiAdobephotoshop },
       { name: "Design systems", icon: TbLayoutGrid },
       { name: "Wireframing", icon: SiCanva },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "MongoDB", icon: SiMongodb },
     ],
   },
 ];
