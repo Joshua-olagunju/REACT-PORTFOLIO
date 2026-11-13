@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { IoChevronForward } from "react-icons/io5";
 
 const ROLES = ["Frontend Engineer", "React & Next.js Developer", "Product-Focused Builder"];
-const RESUME_URL = "https://drive.google.com/file/d/1WqJDj3-HU-aQKQDb9JZZkoqGfm928oWy/view?usp=sharing";
+const RESUME_URL = "https://drive.google.com/file/d/1V7_81eb829rfJp9Gk7p7qroq1fWBGbwp/view?usp=sharing";
 
 // ==================================
 // Hero Component
